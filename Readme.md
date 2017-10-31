@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Anna Kamburyak](https://up.htmlacademy.ru/htmlcss/19/user/338583).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Налимова](https://up.htmlacademy.ru/htmlcss/19/user/16507).
 
 ---
 
