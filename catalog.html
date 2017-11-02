@@ -2,13 +2,11 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Device</title>
+		<title>HTML Academy: Девайс</title>
 	</head>
 	<body>
 		<header class="main-header">
-			<div class="header-logo">
-				<h1>Device</h1>
-			</div>
+			<span class="header-logo">Device</span>
 			<div class="header-top">
 				<form class="search-field">
 					<input type="search" name="search" id="search">
@@ -23,14 +21,29 @@
 			</div>
 		</div>
 		<div class="header-middle">
-			<p>Каталог товаров</p>
-			<ul class="catalog-products">
-				<li>Виртуальная реальность</li>
-				<li>Моноподы для селфи</li>
-				<li>Экшн-камеры</li>
-				<li>Фитнес-браслеты</li>
-				<li>Умные часы</li>
-				<li>Квадрокоптеры</li>
+			<ul class="main-menu">
+				<li>Каталог товаров
+					<ul class="sub-menu">
+						<li>
+							<a href="#">Виртуальная реальность</a>
+						</li>
+						<li>
+							<a href="#">Моноподы для селфи</a>
+						</li>
+						<li>
+							<a href="#">Экшн-камеры</a>
+						</li>
+						<li>
+							<a href="#">Фитнес-браслеты</a>
+						</li>
+						<li>
+							<a href="#">Умные часы</a>
+						</li>
+						<li>
+							<a href="#">Квадрокоптеры</a>
+						</li>
+					</ul>
+				</li>
 			</ul>
 			<nav class="main-navigation">
 				<ul>
@@ -42,7 +55,7 @@
 		</div>
 	</header>
 	<main>
-		<div class="inner-page-title">
+		<div class="page-title">
 		<h1>Моноподы для селфи</h1>
 		<ul class="breadcrumbs">
 			<li>Главная</li>
@@ -134,7 +147,7 @@
 		</div>
 		<ul class="paginator">
 			<li>Назад</li>
-			<li>1</li>
+			<li class="current">1</li>
 			<li>2</li>
 			<li>3</li>
 			<li>Вперед</li>
