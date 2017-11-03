@@ -7,184 +7,146 @@
   <body>
 		<header class="main-header">
 			<a class="header-logo">
-				<img src="#">
+				<img src="#" alt="Логотип">
 			</a>
-			<form class="search-field">
-				<input type="search" name="search" id="search">
+			<form class="header-search">
+				<input type="search" name="search-field" id="search-field">
+				<button type="sumbit" class="header-button">Найти</button>
 			</form>
 			<div class="user-block">
 				<a class="sign-in" href="#">Войти</a>
 			</div>
 			<ul class="compare-and-basket">
-				<li>
-					<a class="compare" href="#">Сравнить</a>
-				</li>	
-				<li>
-					<a class="basket" href="#">Корзина</a>
-				</li>	
+				<li><a class="compare" href="#">Сравнить</a></li>	
+				<li><a class="basket" href="#">Корзина</a></li>	
 			</ul>	
-			<ul class="main-menu">
+			<nav class="main-navigation">
+				<ul class="site-navigation">
 				<li>Каталог товаров
 					<ul class="sub-menu">
-						<li>
-							<a href="#">Виртуальная реальность</a>
-						</li>
-						<li>
-							<a href="#">Моноподы для селфи</a>
-						</li>
-						<li>
-							<a href="#">Экшн-камеры</a>
-						</li>
-						<li>
-							<a href="#">Фитнес-браслеты</a>
-						</li>
-						<li>
-							<a href="#">Умные часы</a>
-						</li>
-						<li>
-							<a href="#">Квадрокоптеры</a>
-						</li>
+						<li><a href="#">Виртуальная реальность</a></li>
+						<li><a href="#">Моноподы для селфи</a></li>
+						<li><a href="#">Экшн-камеры</a></li>
+						<li><a href="#">Фитнес-браслеты</a></li>
+						<li><a href="#">Умные часы</a></li>
+						<li><a href="#">Квадрокоптеры</a></li>
 					</ul>
 				</li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
 			</ul>
-			<nav class="main-navigation">
-				<ul>
-					<li>
-						<a href="#">Доставка</a>
-					</li>
-					<li>
-						<a href="#">Гарантия</a>
-					</li>
-					<li>
-						<a href="#">Контакты</a>
-					</li>
-				</ul>
-			</nav>
+		</nav>
 	</header>
 		<main>
-			<span>Слайдер</span>
-			<div class="slider">
+			<section class="slider">
+				<span>Слайдер</span>
+				<!-- тут будет слайдер, слайдер контролс... -->
 				<div class="slide">
-					<p class="slide-title">
-						Делай селфи, 
-						как Бен Стиллер!
-					 </p>
-					<p class="slide-description">
-						Самая длинная палка для селфи доступна в нашем магазине.
-						Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-					</p>
+					<p class="slide-title">Делай селфи, как Бен Стиллер!</p>
+					<p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине.
+					Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 					<a class="btn" href="#">Подробнее</a>
 					<table class="slide-characteristics">
 						<tr>
-							<th>8, 5 м</th>
-							<th>5 кг</th>
-							<th>Карбон</th>
+							<td>8, 5 м</td>
+							<td>5 кг</td>
+							<td>Карбон</td>
 						</tr>
 						<tr>
-							<td>Длина палки</td>
-							<td>Вес палки</td>
-							<td>Материал</td>
+							<th>Длина палки</th>
+							<th>Вес палки</th>
+							<th>Материал</th>
 						</tr>	
 					</table>
 				</div>
 				<div class="slide">
-					<p class="slide-title">
-						Худеем правильно!
-					 </p>
-					<p class="slide-description">
-						Мотивирующие фитнес-браслеты помогут найти в себе силы 
-						не пропускать занятия и соблюдать диету.
-					</p>
+					<p class="slide-title">Худеем правильно!</p>
+					<p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 					<a class="btn" href="#">Подробнее</a>
 					<table class="slide-characteristics">
 						<tr>
-							<th>48 часов</th>
+							<td>48 часов</td>
 						</tr>
 						<tr>
-							<td>Без подзарядки</td>
+							<th>Без подзарядки</th>
 						</tr>	
 					</table>
 				</div>
 				<div class="slide">
-					<p class="slide-title">
-					Порхает как бабочка, жалит как пчела!
-					 </p>
-					<p class="slide-description">
-						Этот обычный, на первый взгляд, квадрокоптер оснащен 
-						мощным лазером, замаскированным под стандартную камеру.
-					</p>
+					<p class="slide-title">Порхает как бабочка, жалит как пчела!</p>
+					<p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 					<a class="btn" href="#">Подробнее</a>
 					<table class="slide-characteristics">
 						<tr>
-							<th>800 м</th>
-							<th>50 м</th>
+							<td>800 м</td>
+							<td>50 м</td>
 						</tr>
 						<tr>
-							<td>Дальность полета</td>
-							<td>Радиус поражения</td>
+							<th>Дальность полета</th>
+							<th>Радиус поражения</th>
 						</tr>	
 					</table>
 				</div>
-			</div>
-				<ul class="catalog-items">
-					<li>
+			</section>
+				<ul class="catalog">
+					<li class="catalog-item">
 						<a href="#">
-							<img src="#">
+							<img src="#" alt="Виртуальная реальность">
+							<p class="item-title">Виртуальная реальность</p>
 						</a>	
 					</li>
-					<li>
+					<li class="catalog-item">
 						<a href="#">
-							<img src="#">
+							<img src="#" alt="Моноподы для селфи">
+							<p class="item-title">Моноподы для селфи</p>
 						</a>	
 					</li>
-					<li>
+					<li class="catalog-item">
 						<a href="#">
-							<img src="#">
+							<img src="#" alt="Экшн-камеры">
+							<p class="item-title">Экшн-камеры</p>
 						</a>	
 					</li>
-					<li>
+					<li class="catalog-item">
 						<a href="#">
-							<img src="#">
+							<img src="#" alt="Фитнес-браслеты">
+							<p class="item-title">Экшн-камеры</p>
 						</a>	
 					</li>
-					<li>
+					<li class="catalog-item">
 						<a href="#">
-							<img src="#">
+							<img src="#" alt="Умные часы">
+							<p class="item-title">Умные часы</p>
 						</a>	
 					</li>
-					<li>
+					<li class="catalog-item">
 						<a href="#">
-							<img src="#">
+							<img src="#" alt="Квадрокоптеры">
+							<p class="item-title">Квадрокоптеры</p>
 						</a>	
 					</li>
 				</ul>
-			<span>Слайдер</span>
-				<ul>
-					<li>
-						<a href="#">Доставка</a>
-					</li>
-					<li>
-						<a href="#">Гарантия</a>
-					</li>
-					<li>
-						<a href="#">Качество</a>
-					</li>
+				<section class="slider">
+				<span>Слайдер</span> <!-- тут будет слайдер, слайдер контролс... -->
+				<ul class="slider-switches">
+					<li><button class="slider-btn" type="button">Доставка</button></li>
+					<li><button class="slider-btn" type="button">Гарантия</button></li>
+					<li><button class="slider-btn" type="button">Качество</button></li>
 				</ul>
 				<div class="services-slide">
-					<b>Доставка</b>
-					<p>
-					Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-				</p>
+					<h3>Доставка</h3>
+					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 				</div>
 				<div class="services-slide">
-					<b>Гарантия</b>
+					<h3>Гарантия</h3>
 					<p>
 						Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
 						Товар, не дом, конечно же.
 				</p>
 				</div>
 				<div class="services-slide">
-					<b>Кредит</b>
+					<h3>Кредит</h3>
 					<p>
 						Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
 						условия кредита. Выгодные для нашего банка, разумеется.
