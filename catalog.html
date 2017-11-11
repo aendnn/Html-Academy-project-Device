@@ -77,65 +77,68 @@
 				<a>Моноподы для селфи</a>
 			</li>
 		</ul>
-		<section class="filters">
+		<section class="filter-products">
 			<h2>Фильтр:</h2>
-			<form class="form-filters" action="https://echo.htmlacademy.ru" method="post">
-				<fieldset class="filters-price">
-  	  		<legend class="filters-title">Стоимость</legend>
+			<form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
+				<fieldset class="filter-price">
+  	  		<legend class="filter-title">Стоимость</legend>
   	  			<div class="range">
   	  			
   	  			</div> 
     		</fieldset>
-    		<fieldset class="filters-color">
-      		<legend class="filters-title">Цвет</legend>
-      		<label>
-       		 <input type="checkbox" id="black-color" name="black-color">
-        		Черный
-      		</label>
-
-
-      		<label>
-        		<input type="checkbox" id="white-color" name="white-color">
-        		Белый
+    		<fieldset class="filter-color">
+      		<legend class="filter-title">Цвет</legend>
+      		<p class="filter-item">
+      			<label>
+       		 	<input class="visually-hidden" type="checkbox" id="black-color" name="black-color">
+        			Черный
+      			</label>
+      		</p>
+      		<p class="filter-item">
+	      		<label>
+	        		<input class="visually-hidden" type="checkbox" id="white-color" name="white-color">
+	        			Белый
      			</label>
-
-
-      		<label>
-        	  <input type="checkbox" id="blue-color" name="blue-color">
-        	  Синий
-      		</label>
-
-
-      		<label>	
-        		<input type="checkbox" id="red-color" name="red-color">
-        	  Красный
-      		</label>
-
-
-      		<label>
-        		<input type="checkbox" id="pink-color" name="pink-color">
-        		Розовый
-      		</label>	
+     			</p>
+     			<p class="filter-item">
+      			<label>
+        	  	<input class="visually-hidden" type="checkbox" id="blue-color" name="blue-color">
+        	  	Синий
+      			</label>
+      		</p>
+					<p class="filter-item">
+      			<label>	
+        			<input class="visually-hidden" type="checkbox" id="red-color" name="red-color">
+        	  	Красный
+      			</label>
+      		</p>	
+      		<p class="filter-item">
+      			<label>
+        			<input class="visually-hidden" type="checkbox" id="pink-color" name="pink-color">
+        			Розовый
+      			</label>	
     		</fieldset>
-    		<fieldset class="filters-bluetooth">
-     		 <legend class="filters-title">Bluetooth</legend>
-         <label>
-        	<input type="radio" id="yes" name="yes-bluetooth">
-        	 Есть
-        </label>
-
-
-        <label>
-          <input type="radio" id="no" name="no-bluetooth">
-           Нет
-       </label>
+    		<fieldset class="filter-bluetooth">
+     		 <legend class="filter-title">Bluetooth</legend>
+     		 <p class="filter-item">
+	         <label>
+        		<input class="visually-hidden" type="radio" id="yes" name="yes-bluetooth" value="bluetooth-on">
+        	 	Есть
+        	</label>
+        </p>
+        <p class="filter-item">
+        	<label>
+          	<input class="visually-hidden" type="radio" id="no" name="no-bluetooth" value="bluetooth-off">
+           	Нет
+       	</label>
+       </p>	
     	</fieldset> 
     <button class="btn">Показать</button>   
 	</form>
 </section>
 <section class="sort-catalog">
 	<h2>Сортировка:</h2>
-		<ul class="sort-products">
+		<ul class="sort-list">
 			<li class="sort-current"><a>По цене</a></li>
 			<li><a href="#">По типу</a></li>
 			<li><a href="#">По популярности</a></li>
@@ -255,33 +258,34 @@
 				<img src="img/index-logo-html.svg" width="27" height="35" alt="Html Academy">
 			</a>	
 	</footer>
-	 <section class="modal modal-login">
+	 <section class="modal modal-feedback">
 		 	<h2 class="visually-hidden">Личный кабинет</h2>
 		 	<form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
-
-	      <label for="name-field">Ваше имя:</label>
-	      <input type="text" id="name-field" name="name-field" 
-	      placeholder="Представьтесь, пожалуйста">
-
-
-	      <label for="email-field">Ваш e-mail:</label>
-	      <input type="text" id="email-field" name="email-field" 
-	      placeholder="Для отправки ответа">
-
-
-	      <label for="textarea-field">Текст письма</label>
-	      <textarea id="textarea-field">В свободной форме</textarea>
-
-
+		 		<p class="feedback-item">
+	      	<label for="name-field">Ваше имя:</label>
+	      	<input type="text" id="name-field" name="name-field" 
+	      	placeholder="Представьтесь, пожалуйста">
+	      </p>	
+	      <p class="feedback-item">
+	      	<label for="email-field">Ваш e-mail:</label>
+	      	<input type="text" id="email-field" name="email-field" 
+	      	placeholder="Для отправки ответа">
+	      </p>	
+	      <p class="feedback-item">
+	      	<label for="textarea-field">Текст письма</label>
+	      	<textarea id="textarea-field">В свободной форме</textarea>
+	      </p>	
 	      <button class="btn" type="submit">Отправить</button>
      </form>
+     <button class="modal-close" type="button">Закрыть</button>
     </section>
     <section class="modal modal-map">
     	<h2 class="visually-hidden">Как до нас добраться?</h2>
     	<a href="#">
      		<img src="img/map-big.jpg" width="960" height="559"
      		alt="Наш адрес: улица Строителей, 15">
-     	</a>	
+     	</a>
+     	<button class="modal-close" type="button">Закрыть</button>	
     </section>
  </body>
 </html>
