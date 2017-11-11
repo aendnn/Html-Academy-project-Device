@@ -9,9 +9,10 @@
 			<a class="header-logo" href="index.html">
 				<img src="img/header-logo.png" width="164" height="36" alt="Магазин «Девайс»">
 			</a>
-			<form class="header-search">
-				<input type="search" name="search-field" id="search-field">
-				<button type="submit" class="header-button">Найти</button>
+			<form class="header-search" action="https://echo.htmlacademy.ru" method="post">
+				<label class="visually-hidden" for="search-field">Поиск товаров</label>
+				<input type="search" id="search-field" name="search-field" placeholder="Поиск по сайту">
+				<button class="header-button" type="submit">Найти</button>
 			</form>
 			<ul class="user-navigation">
 				<li class="user-login">
@@ -77,59 +78,69 @@
 			</li>
 		</ul>
 		<section class="filters">
-			<h2>Фильтры:</h2>
-			<form>
+			<h2>Фильтр:</h2>
+			<form class="form-filters" action="https://echo.htmlacademy.ru" method="post">
 				<fieldset class="filters-price">
   	  		<legend class="filters-title">Стоимость</legend>
   	  			<div class="range">
   	  			
   	  			</div> 
     		</fieldset>
-    		<fieldset>
+    		<fieldset class="filters-color">
       		<legend class="filters-title">Цвет</legend>
       		<label>
-       		 <input type="checkbox" name="black" id="black">
+       		 <input type="checkbox" id="black-color" name="black-color">
         		Черный
       		</label>
+
+
       		<label>
-        		<input type="checkbox" name="white" id="white">
+        		<input type="checkbox" id="white-color" name="white-color">
         		Белый
      			</label>
+
+
       		<label>
-        	  <input type="checkbox" name="blue" id="blue">
+        	  <input type="checkbox" id="blue-color" name="blue-color">
         	  Синий
       		</label>
+
+
       		<label>	
-        		<input type="checkbox" name="red" id="red">
+        		<input type="checkbox" id="red-color" name="red-color">
         	  Красный
       		</label>
+
+
       		<label>
-        		<input type="checkbox" name="pink" id="pink">
+        		<input type="checkbox" id="pink-color" name="pink-color">
         		Розовый
       		</label>	
     		</fieldset>
-    		<fieldset>
+    		<fieldset class="filters-bluetooth">
      		 <legend class="filters-title">Bluetooth</legend>
          <label>
-        	<input type="radio" name="yes-or-no" id="yes">
+        	<input type="radio" id="yes" name="yes-bluetooth">
         	 Есть
         </label>
+
+
         <label>
-          <input type="radio" name="yes-or-no" id="no">
+          <input type="radio" id="no" name="no-bluetooth">
            Нет
        </label>
     	</fieldset> 
-    <button class="btn filters-btn">Показать</button>   
+    <button class="btn">Показать</button>   
 	</form>
 </section>
 <section class="sort-catalog">
 	<h2>Сортировка:</h2>
 		<ul class="sort-products">
-			<li class="sort-current"><a href="#">По цене</a></li>
+			<li class="sort-current"><a>По цене</a></li>
 			<li><a href="#">По типу</a></li>
 			<li><a href="#">По популярности</a></li>
-			<li><a href="#"></a></li> 
-			<li><a href="#"></a></li>
+			<li><a href="#">По возрастанию</a></li> 
+			<li><a href="#">По убыванию</a></li>
 		</ul>
 	</section>
 	<section class="catalog-products">
@@ -218,47 +229,58 @@
 				<li><a href="#">Контакты</a></li>
 			</ul>
 			<ul class="footer-social">
-				<li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-				<li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
-				<li><a class="social btn social-btn-twi" href="#">Твиттер</a></li>
+				<li>
+					<a class="social-btn social-btn-fb" href="#">
+					<span class="visually-hidden">Фейсбук</span>
+					</a>
+				</li>
+				<li>
+					<a class="social-btn social-btn-inst" href="#">
+					<span class="visually-hidden">Инстаграм</span>
+					</a>
+				</li>
+				<li>
+					<a class="social btn social-btn-twi" href="#">
+					<span class="visually-hidden">Твиттер</span>
+					</a>
+				</li>
 			</ul>
 			<ul class="user-navigation">
-				<li class="user-login">
-					<a class="user-link to-sign-in" href="#">Валентин Петухов</a>
-				</li>
-				<li class="user-logout">
-					<a class="user-link to-logout" href="#">Выйти</a>
-				</li>
-				<li>
-					<a class="user-link to-compare" href="#">Сравнить</a>
-				</li>	
-				<li>
-					<a class="user-link to-basket" href="#">Корзина</a>
-				</li>	
+				<li><a class="user-sign-in" href="#">Войти</a></li>
+				<li><a class="user-compare" href="#">Сравнить</a></li>	
+				<li><a class="user-basket" href="#">Корзина</a></li>	
 			</ul>		
 			<p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
 			<a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">
-				<img src="img/index-logo-html.svg" width="27" height="35" alt="Логотип Html Academy">
+				<img src="img/index-logo-html.svg" width="27" height="35" alt="Html Academy">
 			</a>	
 	</footer>
 	 <section class="modal modal-login">
 		 	<h2 class="visually-hidden">Личный кабинет</h2>
-		 	<form>
+		 	<form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+
 	      <label for="name-field">Ваше имя:</label>
-	      <input type="text" name="name-field" id="name-field"
-	       placeholder="Представьтесь, пожалуйста">
-	       <label for="email-field">Ваш e-mail:</label>
-	       <input type="text" name="email-field" id="email-field" 
-	       placeholder="Для отправки ответа">
-	       <label for="textarea-field">Текст письма</label>
-	       <textarea id="textarea-field">В свободной форме</textarea>
-	       <button class="btn" type="submit">Отправить</button>
+	      <input type="text" id="name-field" name="name-field" 
+	      placeholder="Представьтесь, пожалуйста">
+
+
+	      <label for="email-field">Ваш e-mail:</label>
+	      <input type="text" id="email-field" name="email-field" 
+	      placeholder="Для отправки ответа">
+
+
+	      <label for="textarea-field">Текст письма</label>
+	      <textarea id="textarea-field">В свободной форме</textarea>
+
+
+	      <button class="btn" type="submit">Отправить</button>
      </form>
     </section>
     <section class="modal modal-map">
     	<h2 class="visually-hidden">Как до нас добраться?</h2>
-    <a href="#">
-     		<img src="img/map-big.jpg" width="960" height="559" alt="Наш адрес">
+    	<a href="#">
+     		<img src="img/map-big.jpg" width="960" height="559"
+     		alt="Наш адрес: улица Строителей, 15">
      	</a>	
     </section>
  </body>
