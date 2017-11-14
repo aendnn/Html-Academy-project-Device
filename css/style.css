@@ -213,3 +213,50 @@ h3 {
 	line-height: 40px;
 	color: #000000;
 }
+
+.main-footer{
+	color: #ffffff;
+	background-color: #464646;
+}
+
+.footer-navigation{
+	list-style: none;
+}
+
+.footer-navigation a{
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.user-navigation{
+	list-style: none;
+}
+
+.user-navigation a{
+	color: #ffffff;
+	line-height: 36px;
+}
+
+.modal-feedback{
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.modal-feedback label{
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: bold;
+}
+
+.modal-feedback input,
+.modal-feedback textarea{
+	font-family: "open_sansregular", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #464646;
+	background-color: #f2f2f2;
+	border: none;
+}
