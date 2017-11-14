@@ -121,12 +121,14 @@ h3 {
 }
 
 .user-navigation a:hover,
-.site-navigation a:hover {
+.site-navigation a:hover,
+.navigation-element:hover {
 	color: rgb(0, 20, 0, 0.6);
 }
 
 .user-navigation a:active,
-.site-navigation a:active {
+.site-navigation a:active,
+.navigation-element:active {
 	color: rgb(0, 20, 0, 0.3);
 }
 
@@ -141,6 +143,11 @@ h3 {
 	background-color: #ffffff;
 }
 
+.radio-list,
+.slider-switches{
+	list-style: none;
+}
+
 .product-slide-title{
 	font-family: "gilroyextrabold", "Arial", sans-serif;
 	font-size: 47px;
@@ -153,4 +160,56 @@ h3 {
 	text-transform: uppercase;
 	color: #000000;
 	background-color: #f0c52e;
+}
+
+.slide-characteristics td{
+	font-family: "gilroylight", "Arial", sans-serif;
+	font-size: 36px;
+}
+
+.slide-characteristics th{
+	font-size: 13px;
+	line-height: 20px;
+	color: #464646;
+}
+
+.catalog-list{
+	list-style: none;
+}
+
+.catalog-item{
+	background-color: #f7e296;
+}
+
+.catalog-item a{
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	color: #000000;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.services-radio-list,
+.services-slider-switches,
+.services-slides-list{
+	list-style: none;
+}
+
+.our-services-slider{
+	background-color: #e5e5e5;
+}
+
+.brands-list{
+	list-style: none;
+}
+
+.transport-companies{
+	list-style: none;
+}
+
+.transport-companies li{
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 40px;
+	color: #000000;
 }
