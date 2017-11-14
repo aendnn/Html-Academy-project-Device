@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 		<header class="main-header">
@@ -64,64 +66,89 @@
 	</header>
 		<main>
 			<h1 class="visually-hidden">Магазин «Девайс»</h1>
-			<section class="popular-products">
+			<section class="popular-products-slider">
 				<h2 class="visually-hidden">Популярные товары</h2>
-				<ol class="slider">
-					<!-- тут будет слайдер, слайдер контролс... -->
-					<li class="product-slide slide-selfie-stick">
-						<img src="img/slider-picture1.png" width="384" height="486" alt="Селфи-палка">
-						<b class="slide-title">Делай селфи, как Бен Стиллер!</b>
-						<p class="slide-description">
-							Самая длинная палка для селфи доступна в нашем магазине.
-							Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-						</p>
-						<a class="btn" href="#">Подробнее</a>
-						<table class="slide-characteristics">
-							<tr>
-								<td>8, 5 м</td>
-								<td>5 кг</td>
-								<td>Карбон</td>
-							</tr>
-							<tr>
-								<th>Длина палки</th>
-								<th>Вес палки</th>
-								<th>Материал</th>
-							</tr>	
-						</table>
-					</li>
-					<li class="product-slide slide-fitness-bracelet">
-						<img src="img/slider-picture2.png" width="345" height="485" alt="Фитнес-браслет">
-						<b class="slide-title">Худеем правильно!</b>
-						<p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-						<a class="btn" href="#">Подробнее</a>
-						<table class="slide-characteristics">
-							<tr>
-								<td>48 часов</td>
-							</tr>
-							<tr>
-								<th>Без подзарядки</th>
-							</tr>	
-						</table>
-					</li>
-					<li class="product-slide slide-quadcopter">
-						<img src="img/slider-picture3.png" width="526" height="334" alt="Квадрокоптер">
-						<b class="slide-title">Порхает как бабочка, жалит как пчела!</b>
-						<p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-						<a class="btn" href="#">Подробнее</a>
-						<table class="slide-characteristics">
-							<tr>
-								<td>800 м</td>
-								<td>50 м</td>
-							</tr>
-							<tr>
-								<th>Дальность полета</th>
-								<th>Радиус поражения</th>
-							</tr>	
-						</table>
-					</li>
-				</ol>
+					<ul class="radio-list">
+						<li class="slide-radio">
+							<input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+						</li>
+						<li class="slide-radio">	
+	          	<input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+	          </li>
+	          <li class="slide-radio">	
+	          	<input class="visually-hidden" type="radio" id="btn-3" name="toggle">
+	          </li>
+	        </ul> 
+          <ul class="slider-switches">
+          	<li class="radio-switch">
+          		<button class="products-btn" type="button"></button>
+          	</li>
+          	<li class="radio-switch">
+          		<button class="products-btn" type="button"></button>
+            </li>
+            <li class="radio-switch">
+            	<button class="products-btn" type="button"></button>
+            </li>	
+          </ul>
+					<ol class="-products-slides-list">
+						<li class="product-slide slide-selfie-stick">
+							<img src="img/slider-picture1.png" width="384" height="486" alt="Селфи-палка">
+							<b class="product-slide-title">Делай селфи, как Бен Стиллер!</b>
+							<p class="product-slide-description">
+								Самая длинная палка для селфи доступна в нашем магазине.
+								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+							</p>
+							<a class="btn" href="#">Подробнее</a>
+							<table class="slide-characteristics">
+								<tr>
+									<td>8, 5 м</td>
+									<td>5 кг</td>
+									<td>Карбон</td>
+								</tr>
+								<tr>
+									<th>Длина палки</th>
+									<th>Вес палки</th>
+									<th>Материал</th>
+								</tr>	
+							</table>
+						</li>
+						<li class="product-slide slide-fitness-bracelet">
+							<img src="img/slider-picture2.png" width="345" height="485" alt="Фитнес-браслет">
+							<b class="product-slide-title">Худеем правильно!</b>
+							<p class="product-slide-description">
+								Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+							</p>
+							<a class="btn" href="#">Подробнее</a>
+							<table class="slide-characteristics">
+								<tr>
+									<td>48 часов</td>
+								</tr>
+								<tr>
+									<th>Без подзарядки</th>
+								</tr>	
+							</table>
+						</li>
+						<li class="product-slide slide-quadcopter">
+							<img src="img/slider-picture3.png" width="526" height="334" alt="Квадрокоптер">
+							<b class="product-slide-title">Порхает как бабочка, жалит как пчела!</b>
+							<p class="product-slide-description">
+								Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+							</p>
+							<a class="btn" href="#">Подробнее</a>
+							<table class="slide-characteristics">
+								<tr>
+									<td>800 м</td>
+									<td>50 м</td>
+								</tr>
+								<tr>
+									<th>Дальность полета</th>
+									<th>Радиус поражения</th>
+								</tr>	
+							</table>
+						</li>
+					</ol>
 		  </section>
-			<ul class="catalog">
+			<ul class="catalog-list">
 				<li class="catalog-item">
 					<a href="#">
 						<img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
@@ -161,50 +188,68 @@
 			</ul>
 			<section class="our-services-slider">
 				<h2 class="visually-hidden">Наши услуги</h2>
-				<span>Слайдер</span> <!-- тут будет слайдер, слайдер контролс... -->
+				<ul class="services-slide-list">
+						<li class="slide-radio">
+							<input class="visually-hidden" type="radio" id="services-btn-1" name="toggle" checked>
+						</li>
+						<li class="slide-radio">	
+	          	<input class="visually-hidden" type="radio" id="services-btn-2" name="toggle">
+	          </li>
+	          <li class="slide-radio">	
+	          	<input class="visually-hidden" type="radio" id="services-btn-3" name="toggle">
+	          </li>
+	         </ul> 
 				<ul class="services-slider-switches">
-					<li><button class="slider-btn" type="button">Доставка</button></li>
-					<li><button class="slider-btn" type="button">Гарантия</button></li>
-					<li><button class="slider-btn" type="button">Качество</button></li>
+					<li>
+						<button class="services-btn" type="button">Доставка</button>
+					</li>
+					<li>
+						<button class="services-btn" type="button">Гарантия</button>
+					</li>
+					<li>
+						<button class="services-btn" type="button">Качество</button>
+					</li>
 				</ul>
-				<div class="services-slide slide-delivery">
+				<ul class="services-slides-list">
+					<li class="services-slide slide-delivery">
 						<h3 class="services-slide-title">Доставка</h3>
 						<p class="services-slide-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-					</div>
-					<div class="services-slide slide-guarantee">
-						<h3 class="services-slige-title">Гарантия</h3>
+					</li>
+					<li class="services-slide slide-guarantee">
+						<h3 class="services-slide-title">Гарантия</h3>
 						<p class="services-slide-description">
 						Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
 						Товар, не дом, конечно же.
 					</p>
-				</div>
-				<div class="services-slide slide-credit">
+				</li>
+				<li class="services-slide slide-credit">
 					<h3 class="services-slite-title">Кредит</h3>
 					<p class="services-slide-description">
 						Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
 						условия кредита. Выгодные для нашего банка, разумеется.
 					</p>
-				</div>
+				</li>
+				</ul>
 			</section>
-			<section class="partners">
+			<section class="brands">
 				<h2 class="visually-hidden">Наши партнеры</h2>
-				<ul class="partners-list">
-					<li class="partner-link">
+				<ul class="brands-list">
+					<li class="brand-link">
 						<a href="#">
 							<img src="img/link-1.png" width="260" height="100" alt=" Магазин DJI">
 						</a>
 					</li>
-					<li class="partner-link">
+					<li class="brand-link">
 						<a href="#">
 							<img src="img/link-2.png" width="260" height="100" alt=" Магазин SP Gadgets">
 						</a>	
 					</li>
-					<li class="partner-link">
+					<li class="brand-link">
 						<a href="#">
 							<img src="img/link-3.png" width="260" height="100" alt="Магазин GoPro">
 						</a>	
 					</li>
-					<li class="partner-link">
+					<li class="brand-link">
 						<a href="#">
 							<img src="img/link-4.png" width="260" height="100" alt="Магазин Vive">
 						</a>
