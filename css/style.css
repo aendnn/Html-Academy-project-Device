@@ -56,10 +56,57 @@ h3 {
 	background-color: #f7e296;
 }
 
+.header-logo img {
+	opacity: 1;
+}
+
+.header-logo:hover img {
+	opacity: 0.6;
+}
+
+.header-logo:active img {
+	opacity: 0.3;
+}
+
 .header-search input {
 	font: inherit;
+	color: rgba(0, 0, 0, 0.3);
 	background-color: transparent;
 	border: none;
+}
+
+.header-search input:hover {
+	font: inherit;
+	color: rgba(0, 0, 0, 0.6);
+	background-color: transparent;
+	border: none;
+}
+
+.header-search input:focus {
+	font: inherit;
+	color: rgba(0, 0, 0, 1);
+	background-color: transparent;
+	border-bottom: 2px solid #000000;
+}
+
+.header-button{
+	font: inherit;
+	background-color: transparent;
+	border: 2px solid #000000;
+}
+
+.header-button:hover{
+	font: inherit;
+	color: rgb(255, 255, 255);
+	background-color: #000000;
+	border: 2px solid #000000;
+}
+
+.header-button:active{
+	font: inherit;
+	color: rgb(255, 255, 255, 0.3);
+	background-color: #000000;
+	border: 2px solid #000000;
 }
 
 .user-navigation,
@@ -69,19 +116,41 @@ h3 {
 }
 
 .user-navigation a,
-.site-navigation a,
-.catalog-menu a {
-	color: #000000;
+.site-navigation a {
+	color: rgb(0, 0, 0);
 }
 
-li ~ .navigation-element{
+.user-navigation a:hover,
+.site-navigation a:hover {
+	color: rgb(0, 20, 0, 0.6);
+}
+
+.user-navigation a:active,
+.site-navigation a:active {
+	color: rgb(0, 20, 0, 0.3);
+}
+
+.navigation-element{
 	font-family: "gilroyextrabold", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 }
 
 .popular-products-slider{
-	color: #464646;
+	color: #000000;
 	background-color: #ffffff;
 }
 
+.product-slide-title{
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 47px;
+	font-weight: bold;
+}
+
+.btn{
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #000000;
+	background-color: #f0c52e;
+}
