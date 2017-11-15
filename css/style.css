@@ -413,8 +413,8 @@ a {
 }
 
 .catalog-page .main-footer{
-	font-family: "open_sanslight", "Arial", sans-serif;
-	font-weight: normal;
+	font-family: "open_sans", "Arial", sans-serif;
+	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
 }
