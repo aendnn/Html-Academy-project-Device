@@ -94,48 +94,34 @@
 			<fieldset class="filter-color">
 			<legend class="filter-title">Цвет</legend>
 			<p class="filter-item">
-				<label>
-				<input class="visually-hidden" type="checkbox" id="black-color" name="black-color">
-					Черный
-				</label>
+				<input class="visually-hidden filter-input" type="checkbox" id="black-color" name="black-color">
+				<label for="black-color">Черный</label>
 			</p>
 			<p class="filter-item">
-				<label>
-					<input class="visually-hidden" type="checkbox" id="white-color" name="white-color">
-						Белый
-				</label>
+					<input class="visually-hidden filter-input" type="checkbox" id="white-color" name="white-color">
+					<label for="white-color">Белый</label>
 				</p>
 				<p class="filter-item">
-				<label>
-				<input class="visually-hidden" type="checkbox" id="blue-color" name="blue-color">
-				Синий
-				</label>
+				<input class="visually-hidden filter-input" type="checkbox" id="blue-color" name="blue-color">
+				<label for="blue-color">Синий</label>
 			</p>
-					<p class="filter-item">
-				<label>	
-					<input class="visually-hidden" type="checkbox" id="red-color" name="red-color">
-				Красный
-				</label>
+			<p class="filter-item">
+					<input class="visually-hidden filter-input" type="checkbox" id="red-color" name="red-color" disabled>
+					<label for="red-color">Красный</label>
 			</p>	
 			<p class="filter-item">
-				<label>
-					<input class="visually-hidden" type="checkbox" id="pink-color" name="pink-color">
-					Розовый
-				</label>	
+					<input class="visually-hidden filter-input" type="checkbox" id="pink-color" name="pink-color">
+					<label for="pink-color">Розовый</label>	
 			</fieldset>
 			<fieldset class="filter-bluetooth">
 			 <legend class="filter-title">Bluetooth</legend>
 			 <p class="filter-item">
-			 <label>
-				<input class="visually-hidden" type="radio" id="yes" name="bluetooth" value="bluetooth-on">
-				Есть
-			</label>
+				<input class="visually-hidden filter-input" type="radio" id="yes" name="bluetooth" value="bluetooth-on">
+				<label for="yes">Есть</label>
 		</p>
 		<p class="filter-item">
-			<label>
-			<input class="visually-hidden" type="radio" id="no" name="bluetooth" value="bluetooth-off">
-			Нет
-		</label>
+			<input class="visually-hidden filter-input" type="radio" id="no" name="bluetooth" value="bluetooth-off">
+			<label for="no">Нет</label>
 	   </p>	
 		</fieldset> 
 	<button class="btn btn-form">Показать</button>   
@@ -235,33 +221,38 @@
 		</ul>
 	</main>
 	<footer class="main-footer">
-			<a class="footer-logo" href="index.html">
-				<span class="visually-hidden">Магазин «Девайс»</span>
-				<img src="img/footer-logo.png" width="163" height="36" alt="Магазин «Девайс»">
-			</a>
-			<p class="footer-address">г. Москва, ул. Строителей, 15</p>
-			<ul class="footer-navigation">
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Гарантия</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<ul class="footer-social">
-				<li>
-					<a class="social-btn social-btn-fb" href="#">
-					<span class="visually-hidden">Фейсбук</span>
-					</a>
-				</li>
-				<li>
-					<a class="social-btn social-btn-inst" href="#">
-					<span class="visually-hidden">Инстаграм</span>
-					</a>
-				</li>
-				<li>
-					<a class="social-btn social-btn-twi" href="#">
-					<span class="visually-hidden">Твиттер</span>
-					</a>
-				</li>
-			</ul>
+			<div class="first-column">
+				<a class="footer-logo" href="index.html">
+					<span class="visually-hidden">Магазин «Девайс»</span>
+					<img src="img/footer-logo.png" width="163" height="36" alt="Магазин «Девайс»">
+				</a>
+				<p class="footer-address">г. Москва, ул. Строителей, 15</p>
+			</div>
+			<div class="second-column">
+				<ul class="footer-navigation">
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="footer-social">
+					<li>
+						<a class="social-btn social-btn-fb" href="#">
+						<span class="visually-hidden">Фейсбук</span>
+						</a>
+					</li>
+					<li>
+						<a class="social-btn social-btn-inst" href="#">
+						<span class="visually-hidden">Инстаграм</span>
+						</a>
+					</li>
+					<li>
+						<a class="social-btn social-btn-twi" href="#">
+						<span class="visually-hidden">Твиттер</span>
+						</a>
+					</li>
+				</ul>
+		</div>
+		<div class="third-column">
 			<ul class="footer-user-navigation">
 				<li><a class="user-sign-in" href="#">Войти</a></li>
 				<li><a class="user-compare" href="#">Сравнить</a></li>	
@@ -271,7 +262,8 @@
 			<a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">
 				<span class="visually-hidden">Перейти на страницу Html Academy</span>
 				<img src="img/index-logo-html.svg" width="27" height="35" alt="Html Academy">
-			</a>	
+			</a>
+		</div>	
 	</footer>
 	 <section class="modal modal-feedback">
 			<h2 class="visually-hidden">Личный кабинет</h2>

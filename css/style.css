@@ -47,7 +47,7 @@ a {
 	text-decoration: none;
 }
 
-.catalog-page{
+.catalog-page {
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 900;
@@ -61,7 +61,7 @@ a {
 	background-color: #f7e296;
 }
 
-.catalog-page .main-header{
+.catalog-page .main-header {
 	font-family: "open_sans", "Arial", sans-serif;
 	font-weight: 300;
 }
@@ -99,19 +99,19 @@ a {
 	border-bottom: 2px solid #000000;
 }
 
-.header-button{
+.header-button {
 	font: inherit;
 	background-color: transparent;
 	border: 2px solid #000000;
 }
 
-.header-button:hover{
+.header-button:hover {
 	color: rgb(255, 255, 255);
 	background-color: #000000;
 	border: 2px solid #000000;
 }
 
-.header-button:active{
+.header-button:active {
 	color: rgb(255, 255, 255, 0.3);
 	background-color: #000000;
 	border: 2px solid #000000;
@@ -140,7 +140,7 @@ a {
 	opacity: 0.3;
 }
 
-.navigation-element{
+.navigation-element {
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 900;
@@ -149,15 +149,15 @@ a {
 }
 
 /* стилизация каталога  */
-.page-title{
+.page-title {
 	font-size: 47px;
 }
 
-.breadcrumbs{
+.breadcrumbs {
 	list-style: none;
 }
 
-.breadcrumbs a{
+.breadcrumbs a {
 	font-family: "open_sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 36px;
@@ -165,29 +165,38 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.breadcrumbs a:hover{
+.breadcrumbs a:hover {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.breadcrumbs a:active{
+.breadcrumbs a:active {
 	color: rgba(0, 0, 0, 0.1);
 }
 
-.section-title{
+.section-title {
 	font-size: 16px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
 
-.filter-products{
+.filter-products {
 	background-color: #e6e6e6;
 }
 
-.form-filter{
+.form-filter {
 	background-color: #efefef;
 }
 
-.range-description{
+.form-filter fieldset {
+	border: none;
+}
+
+.filter-title {
+	font-family: "gilroy", "Arial", sans-serif;
+	font-weight: 900;
+}
+
+.range-description {
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 22px;
@@ -195,7 +204,7 @@ a {
 	color: rgba(0, 0, 0, 0.2);
 }
 
-.filter-item label{
+.filter-item label {
 	font-family: "open_sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 40px;
@@ -203,15 +212,20 @@ a {
 	color: rgba(0, 0, 0);
 }
 
-.sort-catalog{
+.filter-input:disabled + label,
+.filter-input:disabled + label {
+	color: #a6a6a6;
+}
+
+.sort-catalog {
 	background-color: #f2f2f2;
 }
 
-.sort-list{
+.sort-list {
 	list-style: none;
 }
 
-.sort-list a{
+.sort-list a {
 	font-family: "open_sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
@@ -219,34 +233,34 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.sort-list a:hover{
+.sort-list a:hover {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.sort-list a:active{
+.sort-list a:active {
 	color: rgb(0, 0, 0);
 }
 
-.sort-current a{
+.sort-current a {
 	color: rgb(0, 0, 0);
 }
 
-.products-list{
+.products-list {
 	list-style: none;
 }
 
-.item-title a{
+.item-title a {
 	color: #000000;
 }
 
-.item-price{
+.item-price {
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	color: #464646;
 }
 
-.hover-link{
+.hover-link {
 	font-family: "open_sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 36px;
@@ -254,15 +268,15 @@ a {
 	color: rgba(0, 0, 0, 0.5);
 }
 
-.hover-link:hover{
+.hover-link:hover {
 	color: rgb(0, 0, 0);
 }
 
-.hover-link:active{
+.hover-link:active {
 	color: rgba(0, 0, 0, 0.2);
 }
 
-.pagination-list{
+.pagination-list {
 	list-style: none;
 }
 
@@ -274,69 +288,71 @@ a {
 
 .item-prev,
 .item-current,
-.item-next{
+.item-next {
 	color: rgb(0, 0, 0);
 }
 
 .item-prev:hover,
-.item-next:hover{
+.item-next:hover {
 	background-color: #d9d9d9;
 }
 
 .item-prev:active,
-.item-next:active{
+.item-next:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
 /* конец стилизации каталога */
 
-.popular-products-slider{
+.popular-products-slider {
 	color: #464646;
 	background-color: #ffffff;
 }
 
 .radio-list,
-.slider-switches{
+.slider-switches {
 	list-style: none;
 }
 
-.product-slide-title{
+.product-slide-title {
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 47px;
 	font-weight: 900;
 	color: #000000;
 }
 
-.btn{
+.btn {
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: rgb(0, 0, 0);
-	background-color: transparent;
+	background-color: #f0c52e;
+	background-image: url("../img/bg-link.png");
+	background-repeat: no-repeat;
 }
 
-.btn:hover{
+.btn:hover {
 	background-color: #f0c52e;
 }
 
-.btn:hover{
+.btn:hover {
 	background-color: #f0c52e;
 }
 
-.btn:active{
+.btn:active {
 	color: rgb(0, 0, 0, 0.3);
 }
 
-.slide-characteristics td{
+.slide-characteristics td {
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 36px;
 	font-weight: 300;
 	color: #000000;
 }
 
-.slide-characteristics th{
+.slide-characteristics th {
 	font-size: 13px;
 	font-weight: 300;
 	line-height: 20px;
@@ -350,15 +366,15 @@ a {
 	background-color: #f7e296;
 }
 
-.catalog-item:hover{
+.catalog-item:hover {
 	background-color: #f0c52e;
 }
 
-.catalog-item:active{
+.catalog-item:active {
 	opacity: 0.3;
 }
 
-.catalog-item a{
+.catalog-item a {
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 900;
@@ -367,15 +383,15 @@ a {
 
 .services-radio-list,
 .services-slider-switches,
-.services-slides-list{
+.services-slides-list {
 	list-style: none;
 }
 
-.our-services-slider{
+.our-services-slider {
 	background-color: #e5e5e5;
 }
 
-.services-btn{
+.services-btn {
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 900;
@@ -383,7 +399,7 @@ a {
 	letter-spacing: 2px;
 }
 
-.services-btn:active{
+.services-btn:active {
 	color: #f7e184;
 	background-color: #000000;
 }
@@ -396,15 +412,15 @@ a {
 	color: #000000;
 }
 
-.brands-list{
+.brands-list { 
 	list-style: none;
 }
 
-.transport-companies{
+.transport-companies {
 	list-style: none;
 }
 
-.transport-companies li{
+.transport-companies li {
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 16px;
 	font-weight: 900;
@@ -412,14 +428,14 @@ a {
 	color: #000000;
 }
 
-.catalog-page .main-footer{
+.catalog-page .main-footer {
 	font-family: "open_sans", "Arial", sans-serif;
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
 }
 
-.main-footer{
+.main-footer {
 	color: #ffffff;
 	background-color: #464646;
 }
@@ -432,15 +448,15 @@ a {
 	opacity: 0.6;
 }
 
-.footer-logo:active{
+.footer-logo:active {
 	opacity: 0.3;
 }
 
-.footer-navigation{
+.footer-navigation {
 	list-style: none;
 }
 
-.footer-navigation a{
+.footer-navigation a {
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 900;
@@ -449,7 +465,7 @@ a {
 	color: rgb(255, 255, 255);
 }
 
-.footer-navigation a:hover{
+.footer-navigation a:hover {
 	color: rgba(255, 255, 255, 0.6);
 }
 
@@ -457,11 +473,11 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-user-navigation{
+.footer-user-navigation {
 	list-style: none;
 }
 
-.footer-user-navigation a{
+.footer-user-navigation a {
 	line-height: 36px;
 	color: rgba(255, 255, 255, 0.7);
 }
@@ -474,7 +490,7 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-social{
+.footer-social {
 	list-style: none;
 }
 
@@ -490,24 +506,29 @@ a {
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
-.logo-academy{
+.logo-academy {
 	opacity: 1;
 }
 
-.logo-academy:hover{
+.logo-academy:hover {
 	opacity: 0.6;
 }
 
-.logo-academy:active{
+.logo-academy:active {
 	opacity: 0.3;
 }
 
-.modal-feedback{
+.modal-feedback {
 	color: #000000;
 	background-color: #ffffff;
+	box-shadow: 10px 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
 
-.modal-feedback label{
+.modal-map img {
+	box-shadow: 10px 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
+.modal-feedback label {
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 18px;
@@ -515,7 +536,7 @@ a {
 }
 
 .modal-feedback input,
-.modal-feedback textarea{
+.modal-feedback textarea {
 	font-family: "open_sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
@@ -537,6 +558,6 @@ a {
 }
 
 .modal-feedback input:invalid,
-.modal-feedback textarea:invalid{
+.modal-feedback textarea:invalid {
 	background-color: #f6dada;
 }
