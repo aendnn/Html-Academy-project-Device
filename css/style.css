@@ -8,7 +8,7 @@
 @font-face {
     font-family: "gilroyextrabold";
     src: url('gilroyextrabold-webfont.woff2') format('woff2'),
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -40,13 +40,6 @@ body {
 
 a {
 	text-decoration: none;
-}
-
-h3 {
-	font-family: "gilroyextrabold", "Arial", sans-serif;
-	font-size: 47px;
-	font-weight: bold;
-	color: #000000;
 }
 
 .main-header {
@@ -135,7 +128,7 @@ h3 {
 .navigation-element{
 	font-family: "gilroyextrabold", "Arial", sans-serif;
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .popular-products-slider{
@@ -151,19 +144,32 @@ h3 {
 .product-slide-title{
 	font-family: "gilroyextrabold", "Arial", sans-serif;
 	font-size: 47px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .btn{
 	font-family: "gilroyextrabold", "Arial", sans-serif;
 	font-size: 18px;
+	font-weight: 700;
 	text-transform: uppercase;
-	color: #000000;
+	color: rgb(0, 0, 0);
+}
+
+.btn:hover{
 	background-color: #f0c52e;
+}
+
+.btn:hover{
+	background-color: #f0c52e;
+}
+
+.btn:active{
+	color: rgb(0, 0, 0, 0.3);
 }
 
 .slide-characteristics td{
 	font-family: "gilroylight", "Arial", sans-serif;
+	font-weight: 400;
 	font-size: 36px;
 }
 
@@ -173,19 +179,31 @@ h3 {
 	color: #464646;
 }
 
-.catalog-list{
+.catalog-list {
 	list-style: none;
 }
 
-.catalog-item{
+.catalog-item img{
 	background-color: #f7e296;
+}
+
+.catalog-item:hover{
+	background-color: #f0c52e;
+}
+
+.catalog-item img{
+	opacity: 1;
+}
+
+.catalog-item:active{
+	opacity: 0.3;
 }
 
 .catalog-item a{
 	font-family: "gilroyextrabold", "Arial", sans-serif;
-	color: #000000;
 	font-size: 18px;
 	font-weight: 700;
+	color: #000000;
 }
 
 .services-radio-list,
@@ -198,8 +216,25 @@ h3 {
 	background-color: #e5e5e5;
 }
 
+.services-btn:active{
+	color: #f7e184;
+	background-color: #000000;
+}
+
+.services-slide-title {
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 47px;
+	color: #000000;
+}
+
 .brands-list{
 	list-style: none;
+}
+
+.info-title{
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 47px;
+	color: #000000;
 }
 
 .transport-companies{
@@ -219,6 +254,18 @@ h3 {
 	background-color: #464646;
 }
 
+.footer-logo {
+	opacity: 1;
+}
+
+.footer-logo:hover {
+	opacity: 0.6;
+}
+
+.footer-logo:active{
+	opacity: 0.3;
+}
+
 .footer-navigation{
 	list-style: none;
 }
@@ -227,16 +274,60 @@ h3 {
 	font-family: "gilroyextrabold", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: bold;
-	color: #ffffff;
+	color: rgb(255, 255, 255);
 }
 
-.user-navigation{
+.footer-navigation a:hover{
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-navigation a:active{
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-user-navigation{
 	list-style: none;
 }
 
-.user-navigation a{
-	color: #ffffff;
+.footer-user-navigation a{
 	line-height: 36px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-user-navigation a:hover {
+	color: rgb(255, 255, 255);
+}
+
+.footer-user-navigation a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-social{
+	list-style: none;
+}
+
+.social-btn {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.social-btn:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.social-btn:active {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logo-academy{
+	opacity: 1;
+}
+
+.logo-academy:hover{
+	opacity: 0.6;
+}
+
+.logo-academy:active{
+	opacity: 0.3;
 }
 
 .modal-feedback{
@@ -259,4 +350,20 @@ h3 {
 	color: #464646;
 	background-color: #f2f2f2;
 	border: none;
+}
+
+.modal-feedback input:hover,
+.modal-feedback textarea:hover {
+	background-color: #eaeaea;
+}
+
+.modal-feedback input:focus,
+.modal-feedback textarea:focus {
+	background-color: transparent;
+	border: 2px solid #f7e296;
+}
+
+.modal-feedback input:invalid,
+.modal-feedback textarea:invalid{
+	background-color: #f6dada;
 }
