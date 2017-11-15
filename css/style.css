@@ -42,11 +42,23 @@ a {
 	text-decoration: none;
 }
 
+.catalog-page{
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: rgb(0, 0, 0);
+}
+
 .main-header {
 	font-size: 15px;
 	line-height: 36px;
 	color: #000000;
 	background-color: #f7e296;
+}
+
+.catalog-page .main-header{
+	font-family: "open_sanslight", "Arial", sans-serif;
+	font-weight: normal;
 }
 
 .header-logo img {
@@ -132,9 +144,7 @@ a {
 }
 
 .page-title{
-	font-family: "gilroyextrabold", "Arial", sans-serif;
 	font-size: 47px;
-	color: #000000;
 }
 
 .breadcrumbs{
@@ -142,8 +152,10 @@ a {
 }
 
 .breadcrumbs a{
+	font-family: "open_sanslight", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 36px;
+	font-weight: normal;
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -156,11 +168,8 @@ a {
 }
 
 .section-title{
-	font-family: "gilroyextrabold", "Arial", sans-serif;
 	font-size: 16px;
-	font-weight: 700;
 	text-transform: uppercase;
-	color: #000000;
 }
 
 .filter-products{
@@ -171,23 +180,19 @@ a {
 	background-color: #efefef;
 }
 
-.filter-title{
-	font-family: "gilroyextrabold", "Arial", sans-serif;
-	font-size: 18px;
-	font-weight: 700;
-	color: #000000;
-}
-
 .range-description{
 	font-family: "gilroylight", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 22px;
-	color: rgba(0, 0, 0, 0.7);
+	font-weight: normal;
+	color: rgba(0, 0, 0, 0.2);
 }
 
 .filter-item label{
+	font-family: "open_sanslight", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 40px;
+	font-weight: normal;
 	color: rgba(0, 0, 0);
 }
 
@@ -200,6 +205,10 @@ a {
 }
 
 .sort-list a{
+	font-family: "open_sansregular", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -220,10 +229,55 @@ a {
 }
 
 .item-title a{
-	font-family: "gilroyextrabold", "Arial", sans-serif;
-	font-size: 18px;
-	font-weight: 700;
 	color: #000000;
+}
+
+.item-price{
+	font-family: "gilroylight", "Arial", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: #464646;
+}
+
+.hover-link{
+	font-size: 13px;
+	line-height: 36px;
+	font-weight: normal;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.hover-link:hover{
+	color: rgb(0, 0, 0);
+}
+
+.hover-link:active{
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.pagination-list{
+	list-style: none;
+}
+
+.pagination-item {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.item-prev,
+.item-current,
+.item-next{
+	color: rgb(0, 0, 0);
+}
+
+.item-prev:hover,
+.item-next:hover{
+	background-color: #d9d9d9;
+}
+
+.item-prev:active,
+.item-next:active{
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .popular-products-slider{
@@ -302,54 +356,6 @@ a {
 	color: #000000;
 }
 
-.item-price{
-	font-family: "gilroylight", "Arial", sans-serif;
-	font-size: 16px;
-	color: #464646;
-}
-
-.hover-link{
-	font-size: 13px;
-	line-height: 36px;
-	color: rgba(0, 0, 0, 0.5);
-}
-
-.hover-link:hover{
-	color: rgb(0, 0, 0);
-}
-
-.hover-link:active{
-	color: rgba(0, 0, 0, 0.2);
-}
-
-.pagination-list{
-	list-style: none;
-}
-
-.pagination-item {
-	font-family: "gilroyextrabold", "Arial", sans-serif;
-	font-size: 16px;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: rgba(0, 0, 0, 0.3);
-}
-
-.item-prev,
-.item-current,
-.item-next{
-	color: rgb(0, 0, 0);
-}
-
-.item-prev:hover,
-.item-next:hover{
-	background-color: #d9d9d9;
-}
-
-.item-prev:active,
-.item-next:active{
-	color: rgba(0, 0, 0, 0.3);
-}
-
 .services-radio-list,
 .services-slider-switches,
 .services-slides-list{
@@ -390,6 +396,13 @@ a {
 	font-weight: 700;
 	line-height: 40px;
 	color: #000000;
+}
+
+.catalog-page .main-footer{
+	font-family: "open_sanslight", "Arial", sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 30px;
 }
 
 .main-footer{
