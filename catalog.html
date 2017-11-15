@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс Каталог</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<title>HTML Academy: Девайс Каталог</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="catalog-page">
 		<header class="main-header">
 			<a class="header-logo" href="index.html">
 				<span class="visually-hidden">Магазин «Девайс»</span>
@@ -33,25 +33,26 @@
 			</ul>	
 			<nav class="main-navigation">
 				<ul class="site-navigation">
-					<li class="navigation-element">Каталог товаров
+					<li>
+					<span class="navigation-element">Каталог товаров</span>
 						<ul class="catalog-menu">
-							<li class="catalog-element">
-								<a href="#">Виртуальная реальность</a>
+							<li>
+								<a class="catalog-element" href="#">Виртуальная реальность</a>
 							</li>
-							<li class="catalog-element">
-								<a href="#">Моноподы для селфи</a>
+							<li>
+								<a class="catalog-element" href="#">Моноподы для селфи</a>
 							</li>
-							<li class="catalog-element">
-								<a href="#">Экшн-камеры</a>
+							<li>
+								<a class="catalog-element" href="#">Экшн-камеры</a>
 							</li>
-							<li class="catalog-element">
-								<a href="#">Фитнес-браслеты</a>
+							<li>
+								<a class="catalog-element" href="#">Фитнес-браслеты</a>
 							</li>
-							<li class="catalog-element">
-								<a href="#">Умные часы</a>
+							<li>
+								<a class="catalog-element" href="#">Умные часы</a>
 							</li>
-							<li class="catalog-element">
-								<a href="#">Квадрокоптеры</a>
+							<li>
+								<a class="catalog-element" href="#">Квадрокоптеры</a>
 							</li>
 						</ul>
 					</li>
@@ -81,66 +82,67 @@
 			</li>
 		</ul>
 		<section class="filter-products">
-			<h2>Фильтр:</h2>
+			<h2 class="section-title filter-products-title">Фильтр:</h2>
 			<form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
 				<fieldset class="filter-price">
-  	  		<legend class="filter-title">Стоимость</legend>
-  	  			<div class="range" tabindex="0">
-  	  			
-  	  			</div> 
-    		</fieldset>
-    		<fieldset class="filter-color">
-      		<legend class="filter-title">Цвет</legend>
-      		<p class="filter-item">
-      			<label>
-       		 	<input class="visually-hidden" type="checkbox" id="black-color" name="black-color">
-        			Черный
-      			</label>
-      		</p>
-      		<p class="filter-item">
-	      		<label>
-	        		<input class="visually-hidden" type="checkbox" id="white-color" name="white-color">
-	        			Белый
-     			</label>
-     			</p>
-     			<p class="filter-item">
-      			<label>
-        	  	<input class="visually-hidden" type="checkbox" id="blue-color" name="blue-color">
-        	  	Синий
-      			</label>
-      		</p>
+			<legend class="filter-title">Стоимость</legend>
+				<div class="range" tabindex="0">
+					<span class="range-description">От 0</span>
+					<span class="range-description">до 5000</span>
+				</div> 
+			</fieldset>
+			<fieldset class="filter-color">
+			<legend class="filter-title">Цвет</legend>
+			<p class="filter-item">
+				<label>
+				<input class="visually-hidden" type="checkbox" id="black-color" name="black-color">
+					Черный
+				</label>
+			</p>
+			<p class="filter-item">
+				<label>
+					<input class="visually-hidden" type="checkbox" id="white-color" name="white-color">
+						Белый
+				</label>
+				</p>
+				<p class="filter-item">
+				<label>
+				<input class="visually-hidden" type="checkbox" id="blue-color" name="blue-color">
+				Синий
+				</label>
+			</p>
 					<p class="filter-item">
-      			<label>	
-        			<input class="visually-hidden" type="checkbox" id="red-color" name="red-color">
-        	  	Красный
-      			</label>
-      		</p>	
-      		<p class="filter-item">
-      			<label>
-        			<input class="visually-hidden" type="checkbox" id="pink-color" name="pink-color">
-        			Розовый
-      			</label>	
-    		</fieldset>
-    		<fieldset class="filter-bluetooth">
-     		 <legend class="filter-title">Bluetooth</legend>
-     		 <p class="filter-item">
-	         <label>
-        		<input class="visually-hidden" type="radio" id="yes" name="bluetooth" value="bluetooth-on">
-        	 	Есть
-        	</label>
-        </p>
-        <p class="filter-item">
-        	<label>
-          	<input class="visually-hidden" type="radio" id="no" name="bluetooth" value="bluetooth-off">
-           	Нет
-       	</label>
-       </p>	
-    	</fieldset> 
-    <button class="btn">Показать</button>   
+				<label>	
+					<input class="visually-hidden" type="checkbox" id="red-color" name="red-color">
+				Красный
+				</label>
+			</p>	
+			<p class="filter-item">
+				<label>
+					<input class="visually-hidden" type="checkbox" id="pink-color" name="pink-color">
+					Розовый
+				</label>	
+			</fieldset>
+			<fieldset class="filter-bluetooth">
+			 <legend class="filter-title">Bluetooth</legend>
+			 <p class="filter-item">
+			 <label>
+				<input class="visually-hidden" type="radio" id="yes" name="bluetooth" value="bluetooth-on">
+				Есть
+			</label>
+		</p>
+		<p class="filter-item">
+			<label>
+			<input class="visually-hidden" type="radio" id="no" name="bluetooth" value="bluetooth-off">
+			Нет
+		</label>
+	   </p>	
+		</fieldset> 
+	<button class="btn btn-form">Показать</button>   
 	</form>
 </section>
 <section class="sort-catalog">
-	<h2>Сортировка:</h2>
+	<h2 class="section-title sort-catalog-title">Сортировка:</h2>
 		<ul class="sort-list">
 			<li class="sort-current"><a>По цене</a></li>
 			<li><a href="#">По типу</a></li>
@@ -168,7 +170,7 @@
 					</h3>
 					<span class="item-price">500 руб.</span>
 					<div class="item-hover">
-						<a class="hover-link link-to-basket" href="#">В корзину</a>
+						<a class="btn btn-to-basket" href="#">В корзину</a>
 						<a class="hover-link link-to-compare" href="#">Добавить к сравнению</a>
 					</div>
 				</article>
@@ -181,7 +183,7 @@
 					</h3>
 					<span class="item-price">1 500 руб.</span>
 					<div class="item-hover">
-						<a class="hover-link link-to-basket" href="#">В корзину</a>
+						<a class="btn btn-to-basket" href="#">В корзину</a>
 						<a class="hover-link link-to-compare" href="#">Добавить к сравнению</a>
 					</div>
 				</article>
@@ -194,7 +196,7 @@
 					</h3>
 					<span class="item-price">2 500 руб.</span>
 					<div class="item-hover">
-						<a class="hover-link link-to-basket" href="#">В корзину</a>
+						<a class="btn btn-to-basket" href="#">В корзину</a>
 						<a class="hover-link link-to-compare" href="#">Добавить к сравнению</a>
 					</div>
 					</article>
@@ -207,7 +209,7 @@
 					</h3>
 					<span class="item-price">4 900 руб.</span>
 					<div class="item-hover">
-						<a class="hover-link link-to-basket" href="#">В корзину</a>
+						<a class="btn btn-to-basket" href="#">В корзину</a>
 						<a class="hover-link link-to-compare" href="#">Добавить к сравнению</a>
 					</div>
 				</article>
@@ -215,20 +217,20 @@
 			</ul>
 		</section>
 		<ul class="pagination-list">
-			<li class="pagination-item">
-				<a href="#">Назад</a>
+			<li>
+				<a class="pagination-item item-prev" href="#">Назад</a>
 			</li>
-			<li class="pagination-item-current">
-				<a>1</a>
+			<li>
+				<a class="pagination-item item-current">1</a>
 			</li>
-			<li class="pagination-item">
-				<a href="#">2</a>
+			<li>
+				<a class="pagination-item" href="#">2</a>
 			</li>
-			<li class="pagination-item">
-				<a href="#">3</a>
+			<li>
+				<a class="pagination-item" href="#">3</a>
 			</li>
-			<li class="pagination-item">
-				<a href="#">Вперед</a>
+			<li>
+				<a class="pagination-item item-next" href="#">Вперед</a>
 			</li>
 		</ul>
 	</main>
@@ -255,12 +257,12 @@
 					</a>
 				</li>
 				<li>
-					<a class="social btn social-btn-twi" href="#">
+					<a class="social-btn social-btn-twi" href="#">
 					<span class="visually-hidden">Твиттер</span>
 					</a>
 				</li>
 			</ul>
-			<ul class="user-navigation">
+			<ul class="footer-user-navigation">
 				<li><a class="user-sign-in" href="#">Войти</a></li>
 				<li><a class="user-compare" href="#">Сравнить</a></li>	
 				<li><a class="user-basket" href="#">Корзина</a></li>	
@@ -272,33 +274,33 @@
 			</a>	
 	</footer>
 	 <section class="modal modal-feedback">
-		 	<h2 class="visually-hidden">Личный кабинет</h2>
-		 	<form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
-		 		<p class="feedback-item">
-	      	<label for="name-field">Ваше имя:</label>
-	      	<input type="text" id="name-field" name="name-field" 
-	      	placeholder="Представьтесь, пожалуйста">
-	      </p>	
-	      <p class="feedback-item">
-	      	<label for="email-field">Ваш e-mail:</label>
-	      	<input type="text" id="email-field" name="email-field" 
-	      	placeholder="Для отправки ответа">
-	      </p>	
-	      <p class="feedback-item">
-	      	<label for="textarea-field">Текст письма</label>
-	      	<textarea id="textarea-field">В свободной форме</textarea>
-	      </p>	
-	      <button class="btn" type="submit">Отправить</button>
-     </form>
-     <button class="modal-close" type="button">Закрыть</button>
-    </section>
-    <section class="modal modal-map">
-    	<h2 class="visually-hidden">Как до нас добраться?</h2>
-    	<a href="#">
-     		<img src="img/map-big.jpg" width="960" height="559"
-     		alt="Наш адрес: улица Строителей, 15">
-     	</a>
-     	<button class="modal-close" type="button">Закрыть</button>	
-    </section>
+			<h2 class="visually-hidden">Личный кабинет</h2>
+			<form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+				<p class="feedback-item">
+			<label for="name-field">Ваше имя:</label>
+			<input type="text" id="name-field" name="name-field" 
+			placeholder="Представьтесь, пожалуйста">
+		  </p>	
+		  <p class="feedback-item">
+			<label for="email-field">Ваш e-mail:</label>
+			<input type="text" id="email-field" name="email-field" 
+			placeholder="Для отправки ответа">
+		  </p>	
+		  <p class="feedback-item">
+			<label for="textarea-field">Текст письма</label>
+			<textarea id="textarea-field">В свободной форме</textarea>
+		  </p>	
+		  <button class="btn" type="submit">Отправить</button>
+	 </form>
+	 <button class="modal-close" type="button">Закрыть</button>
+	</section>
+	<section class="modal modal-map">
+		<h2 class="visually-hidden">Как до нас добраться?</h2>
+		<a href="#">
+			<img src="img/map-big.jpg" width="960" height="559"
+			alt="Наш адрес: улица Строителей, 15">
+		</a>
+		<button class="modal-close" type="button">Закрыть</button>	
+	</section>
  </body>
 </html>

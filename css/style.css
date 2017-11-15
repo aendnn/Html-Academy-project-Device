@@ -131,6 +131,101 @@ a {
 	font-weight: 700;
 }
 
+.page-title{
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 47px;
+	color: #000000;
+}
+
+.breadcrumbs{
+	list-style: none;
+}
+
+.breadcrumbs a{
+	font-size: 14px;
+	line-height: 36px;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover{
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active{
+	color: rgba(0, 0, 0, 0.1);
+}
+
+.section-title{
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.filter-products{
+	background-color: #e6e6e6;
+}
+
+.form-filter{
+	background-color: #efefef;
+}
+
+.filter-title{
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.range-description{
+	font-family: "gilroylight", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.filter-item label{
+	font-size: 14px;
+	line-height: 40px;
+	color: rgba(0, 0, 0);
+}
+
+.sort-catalog{
+	background-color: #f2f2f2;
+}
+
+.sort-list{
+	list-style: none;
+}
+
+.sort-list a{
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-list a:hover{
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-list a:active{
+	color: rgb(0, 0, 0);
+}
+
+.sort-current a{
+	color: rgb(0, 0, 0);
+}
+
+.products-list{
+	list-style: none;
+}
+
+.item-title a{
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #000000;
+}
+
 .popular-products-slider{
 	color: #000000;
 	background-color: #ffffff;
@@ -151,6 +246,7 @@ a {
 	font-family: "gilroyextrabold", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 700;
+	text-align: center;
 	text-transform: uppercase;
 	color: rgb(0, 0, 0);
 }
@@ -206,6 +302,54 @@ a {
 	color: #000000;
 }
 
+.item-price{
+	font-family: "gilroylight", "Arial", sans-serif;
+	font-size: 16px;
+	color: #464646;
+}
+
+.hover-link{
+	font-size: 13px;
+	line-height: 36px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.hover-link:hover{
+	color: rgb(0, 0, 0);
+}
+
+.hover-link:active{
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.pagination-list{
+	list-style: none;
+}
+
+.pagination-item {
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.item-prev,
+.item-current,
+.item-next{
+	color: rgb(0, 0, 0);
+}
+
+.item-prev:hover,
+.item-next:hover{
+	background-color: #d9d9d9;
+}
+
+.item-prev:active,
+.item-next:active{
+	color: rgba(0, 0, 0, 0.3);
+}
+
 .services-radio-list,
 .services-slider-switches,
 .services-slides-list{
@@ -216,12 +360,17 @@ a {
 	background-color: #e5e5e5;
 }
 
+.services-btn{
+	border: none;
+}
+
 .services-btn:active{
 	color: #f7e184;
 	background-color: #000000;
 }
 
-.services-slide-title {
+.services-slide-title,
+.info-title {
 	font-family: "gilroyextrabold", "Arial", sans-serif;
 	font-size: 47px;
 	color: #000000;
@@ -229,12 +378,6 @@ a {
 
 .brands-list{
 	list-style: none;
-}
-
-.info-title{
-	font-family: "gilroyextrabold", "Arial", sans-serif;
-	font-size: 47px;
-	color: #000000;
 }
 
 .transport-companies{
