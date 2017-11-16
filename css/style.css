@@ -305,6 +305,14 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.pagination-item:hover{
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item:active{
+	color: rgb(0, 0, 0);
+}
+
 .item-prev,
 .item-current,
 .item-next {
@@ -345,11 +353,9 @@ a {
 	font-size: 18px;
 	font-weight: 900;
 	text-transform: uppercase;
+	text-align: center;
 	letter-spacing: 2px;
 	color: rgb(0, 0, 0);
-	background-color: #f0c52e;
-	background-image: url("../img/bg-link.png");
-	background-repeat: no-repeat;
 }
 
 .btn:hover {
@@ -389,7 +395,8 @@ a {
 	background-color: #f0c52e;
 }
 
-.catalog-item:active {
+.catalog-item:active img,
+.catalog-item:active .item-title {
 	opacity: 0.3;
 }
 
@@ -423,6 +430,7 @@ a {
 }
 
 .services-btn:active {
+	text-align: left;
 	color: #f7e184;
 	background-color: #000000;
 }
@@ -438,6 +446,31 @@ a {
 .brands-list { 
 	list-style: none;
 }
+
+.brand-link a:hover img{
+	opacity: 0;
+}
+
+.link-dji:hover{
+	background-image: url("../img/link-1-hover.png");
+	background-repeat: no-repeat;
+}
+
+.link-gadgets:hover{
+	background-image: url("../img/link-2-hover.png");
+	background-repeat: no-repeat;
+}
+
+.link-gopro:hover{
+	background-image: url("../img/link-3-hover.png");
+	background-repeat: no-repeat;
+}
+
+.link-vive:hover{
+	background-image: url("../img/link-4-hover.png");
+	background-repeat: no-repeat;
+}
+
 
 .transport-companies {
 	list-style: none;
