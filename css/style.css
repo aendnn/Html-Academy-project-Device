@@ -61,6 +61,14 @@ a {
 	background-color: #f7e296;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .catalog-page .main-header {
 	font-family: "open_sans", "Arial", sans-serif;
 	font-weight: 300;
@@ -78,29 +86,33 @@ a {
 	opacity: 0.3;
 }
 
+.header-search{
+	font-size: 0;
+}
+
+.header-search input,
+.header-button {
+	font-size: 15px;
+	line-height: 36px;
+}
+
 .header-search input {
-	font: inherit;
 	color: rgba(0, 0, 0, 0.3);
 	background-color: transparent;
 	border: none;
 }
 
 .header-search input:hover {
-	font: inherit;
 	color: rgba(0, 0, 0, 0.6);
-	background-color: transparent;
-	border: none;
 }
 
 .header-search input:focus {
-	font: inherit;
 	color: rgb(0, 0, 0);
 	background-color: transparent;
 	border-bottom: 2px solid #000000;
 }
 
 .header-button {
-	font: inherit;
 	background-color: transparent;
 	border: 2px solid #000000;
 }
@@ -151,6 +163,7 @@ a {
 /* стилизация каталога  */
 .page-title {
 	font-size: 47px;
+	font-weight: 900;
 }
 
 .breadcrumbs {
@@ -176,6 +189,7 @@ a {
 .section-title {
 	font-size: 16px;
 	text-transform: uppercase;
+	font-weight: 900;
 	letter-spacing: 2px;
 }
 
@@ -247,6 +261,11 @@ a {
 
 .products-list {
 	list-style: none;
+}
+
+.item-title{
+	font-size: 18px;
+	font-weight: 900;
 }
 
 .item-title a {
@@ -379,6 +398,10 @@ a {
 	font-size: 18px;
 	font-weight: 900;
 	color: #000000;
+}
+
+.catalog-item span{
+	font-weight: 900;
 }
 
 .services-radio-list,
