@@ -86,29 +86,62 @@ a {
 	opacity: 0.3;
 }
 
-.header-search{
+.header-search {
 	font-size: 0;
 }
 
-.header-search input,
+.input-search,
 .header-button {
 	font-size: 15px;
 	line-height: 36px;
 }
 
-.header-search input {
-	color: rgba(0, 0, 0, 0.3);
+.input-search {
 	background-color: transparent;
 	border: none;
 }
 
-.header-search input:hover {
+.input-search:-ms-input-placeholder {
+	opacity: 1;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.input-search::-ms-input-placeholder {
+	opacity: 1;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.input-search::placeholder {
+	opacity: 1;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.input-search:hover:-ms-input-placeholder {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.header-search input:focus {
+.input-search:hover::-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.input-search:hover::placeholder {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.input-search:focus:-ms-input-placeholder {
 	color: rgb(0, 0, 0);
-	background-color: transparent;
+}
+
+.input-search:focus::-ms-input-placeholder {
+	color: rgb(0, 0, 0);
+}
+
+.input-search:focus::placeholder {
+	color: rgb(0, 0, 0);
+}
+
+.input-search:focus {
+	outline: 0;
 	border-bottom: 2px solid #000000;
 }
 
@@ -124,7 +157,7 @@ a {
 }
 
 .header-button:active {
-	color: rgb(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
 	background-color: #000000;
 	border: 2px solid #000000;
 }
@@ -597,10 +630,34 @@ a {
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
-	color: #464646;
 	background-color: #f2f2f2;
-	border: none;
+	border: 2px solid #f2f2f2;
 }
+
+.feedback-item input:-ms-input-placeholder {
+	color: rgba(70, 70, 70, 0.4);
+}
+
+.feedback-item input::-ms-input-placeholder {
+	color: rgba(70, 70, 70, 0.4);
+}
+
+.feedback-item input::placeholder {
+	color: rgba(70, 70, 70, 0.4);
+}
+
+.feedback-item textarea:-ms-input-placeholder {
+	color: rgba(70, 70, 70, 0.4);
+}
+
+.feedback-item textarea::-ms-input-placeholder {
+	color: rgba(70, 70, 70, 0.4);
+}
+
+.feedback-item textarea::placeholder {
+	color: rgba(70, 70, 70, 0.4);
+}
+
 
 .modal-feedback input:hover,
 .modal-feedback textarea:hover {
@@ -609,8 +666,9 @@ a {
 
 .modal-feedback input:focus,
 .modal-feedback textarea:focus {
+	outline: 0;
+	border-color: #f7e296;
 	background-color: transparent;
-	border: 2px solid #f7e296;
 }
 
 .modal-feedback input:invalid,
