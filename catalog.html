@@ -8,6 +8,8 @@
   </head>
   <body class="catalog-page">
 		<header class="main-header">
+			<div class="container">
+			<div class="main-header-wrapper">
 			<a class="header-logo" href="index.html">
 				<span class="visually-hidden">Магазин «Девайс»</span>
 				<img src="img/header-logo.png" width="164" height="36" alt="Магазин «Девайс»">
@@ -31,6 +33,7 @@
 					<a class="user-link to-basket" href="#">Корзина</a>
 				</li>	
 			</ul>	
+		</div>
 			<nav class="main-navigation">
 				<ul class="site-navigation">
 					<li>
@@ -67,8 +70,9 @@
 				</li>
 			</ul>
 		</nav>
+	</div>
 	</header>
-	<main>
+	<main class="container">
 		<h1 class="page-title">Моноподы для селфи</h1>
 		<ul class="breadcrumbs">
 			<li>
@@ -81,6 +85,7 @@
 				<a>Моноподы для селфи</a>
 			</li>
 		</ul>
+		<div class="catalog-columns">
 		<section class="filter-products">
 			<h2 class="section-title filter-products-title">Фильтр:</h2>
 			<form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
@@ -112,6 +117,7 @@
 			<p class="filter-item">
 					<input class="visually-hidden filter-input" type="checkbox" id="pink-color" name="pink-color">
 					<label for="pink-color">Розовый</label>	
+			</p>		
 			</fieldset>
 			<fieldset class="filter-bluetooth">
 			 <legend class="filter-title">Bluetooth</legend>
@@ -202,6 +208,7 @@
 				</li>
 			</ul>
 		</section>
+	</div>
 		<ul class="pagination-list">
 			<li>
 				<a class="pagination-item item-prev" href="#">Назад</a>
@@ -221,14 +228,15 @@
 		</ul>
 	</main>
 	<footer class="main-footer">
-			<div class="first-column">
+		<div class="container">
+			<div class="main-footer-wrapper">
 				<a class="footer-logo" href="index.html">
 					<span class="visually-hidden">Магазин «Девайс»</span>
 					<img src="img/footer-logo.png" width="163" height="36" alt="Магазин «Девайс»">
 				</a>
 				<p class="footer-address">г. Москва, ул. Строителей, 15</p>
 			</div>
-			<div class="second-column">
+			<div class="footer-navigation-wrapper">
 				<ul class="footer-navigation">
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Гарантия</a></li>
@@ -252,7 +260,7 @@
 					</li>
 				</ul>
 		</div>
-		<div class="third-column">
+		<div class="for-user-wrapper">
 			<ul class="footer-user-navigation">
 				<li><a class="user-sign-in" href="#">Войти</a></li>
 				<li><a class="user-compare" href="#">Сравнить</a></li>	
@@ -263,6 +271,7 @@
 				<span class="visually-hidden">Перейти на страницу Html Academy</span>
 				<img src="img/index-logo-html.svg" width="27" height="35" alt="Html Academy">
 			</a>
+		</div>
 		</div>	
 	</footer>
 	 <section class="modal modal-feedback">

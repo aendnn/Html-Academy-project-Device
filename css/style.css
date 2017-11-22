@@ -88,6 +88,7 @@ a {
 .catalog-page .main-header {
 	font-family: "open_sans", "Arial", sans-serif;
 	font-weight: 300;
+	margin-bottom: 40px;
 }
 
 .header-logo {
@@ -227,11 +228,18 @@ a {
 
 /* стилизация каталога  */
 .page-title {
+	margin: 0;
+	padding: 0;
 	font-size: 47px;
+	line-height: 61px;
 	font-weight: 900;
 }
 
 .breadcrumbs {
+	display: flex;
+	margin: 0;
+	margin-bottom: 50px;
+	padding: 0;
 	list-style: none;
 }
 
@@ -251,7 +259,14 @@ a {
 	color: rgba(0, 0, 0, 0.1);
 }
 
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
 .section-title {
+	width: 200px;
+	margin: 0;
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 900;
@@ -263,6 +278,7 @@ a {
 }
 
 .form-filter {
+	width: 200px;
 	background-color: #efefef;
 }
 
@@ -297,10 +313,13 @@ a {
 }
 
 .sort-catalog {
+	width: 560px;
 	background-color: #f2f2f2;
 }
 
 .sort-list {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -329,8 +348,18 @@ a {
 	color: rgb(0, 0, 0);
 }
 
+.catalog-products {
+	width: 800px;
+}
+
 .products-list {
+	margin: 0;
+	padding: 0;
 	list-style: none;
+}
+
+.product-item {
+	width: 360px;
 }
 
 .item-title{
