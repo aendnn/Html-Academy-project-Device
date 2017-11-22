@@ -62,16 +62,19 @@ a {
 }
 
 .main-header {
+	margin-top: 23px;
 	font-size: 15px;
 	line-height: 36px;
 	color: #000000;
 	background-color: #f7e296;
 }
 
-.main-header .container {
+.main-header-wrapper {
 	display: flex;
 	flex-direction: column;
-	align-content: space-between;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 55px;
 }
 
 .visually-hidden {
@@ -90,7 +93,6 @@ a {
 .header-logo {
 	width: 164px;
 	height: 36px;
-	margin-right: auto;
 	margin-bottom: 35px;
 }
 
@@ -107,9 +109,7 @@ a {
 }
 
 .header-search {
-	align-self: flex-end;
 	width: 230px;
-	margin-right: auto;
 	font-size: 0;
 }
 
@@ -209,13 +209,12 @@ a {
 }
 
 .user-navigation {
-	display: flex;
-	justify-content: flex-end;
+	align-self: center;
 }
 
-.user-link {
-	width: 100px;
-	margin-bottom: auto;
+.site-navigation {
+	display: flex;
+	justify-content: space-between;
 }
 
 .navigation-element {
@@ -412,16 +411,38 @@ a {
 	list-style: none;
 }
 
+.product-slide-picture {
+	display: flex;
+}
+
+.product-slide-picture img {
+	width: 500px;
+	margin-left: 60px;
+}
+
+.product-slide-description {
+	display: flex;
+	flex-direction: column;
+}
+
 .product-slide-title {
+	width: 500px;
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 47px;
+	line-height: 61px;
 	font-weight: 900;
 	color: #000000;
 }
 
+.product-slide-description p {
+	width: 460px;
+}
+
 .btn {
+	width: 220px;
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 18px;
+	line-height: 23px;
 	font-weight: 900;
 	text-transform: uppercase;
 	text-align: center;
@@ -440,9 +461,14 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.slide-characteristics {
+	width: 460px;
+}
+
 .slide-characteristics td {
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 36px;
+	line-height: 46px;
 	font-weight: 300;
 	color: #000000;
 }
@@ -454,10 +480,15 @@ a {
 }
 
 .catalog-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 85px;
 	list-style: none;
 }
 
 .catalog-item {
+	width: 160px;
 	background-color: #f7e296;
 }
 
@@ -488,20 +519,35 @@ a {
 }
 
 .services-btn {
+	width: 160px;
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 900;
-	text-align: left;
+	text-align: center;
 	letter-spacing: 2px;
 	background-image: none;
 	background-image: linear-gradient(to top, #e5e5e5, #e5e5e5 35%, #f0c52e 35%, #f0c52e 70%, #e5e5e5 70%, #e5e5e5);
 	border: none;
 }
 
+.services-slider-switches {
+	display: flex;
+	flex-direction: column;
+}
+
 .services-btn:active {
 	text-align: left;
 	color: #f7e184;
 	background-image: linear-gradient(to top, #000000, #000000)
+}
+
+.services-slides-list {
+	display: flex;
+	margin-bottom: 105px;
+}
+
+.services-slides-list li {
+	width: 720px;
 }
 
 .services-slide-title,
@@ -513,6 +559,8 @@ a {
 }
 
 .brands-list { 
+	display: flex;
+	justify-content: space-between;
 	list-style: none;
 }
 
@@ -540,6 +588,19 @@ a {
 	background-repeat: no-repeat;
 }
 
+.company-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.info-about-us {
+	width: 500px;
+}
+
+.info-contacts {
+	width: 600px;
+}
+
 .transport-companies {
 	list-style: none;
 }
@@ -562,6 +623,16 @@ a {
 .main-footer {
 	color: #ffffff;
 	background-color: #464646;
+	margin-top: 90px;
+	padding: 65px 10px;
+}
+
+.main-footer .container {
+	display: flex;
+}
+
+.main-footer-wrapper {
+	width: 200px;
 }
 
 .footer-logo {
@@ -576,7 +647,12 @@ a {
 	opacity: 0.3;
 }
 
+.footer-navigation-wrapper {
+	width: 440px;
+}
+
 .footer-navigation {
+	margin: 0;
 	list-style: none;
 }
 
@@ -597,7 +673,12 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+.for-user-wrapper {
+	width: 360px;
+}
+
 .footer-user-navigation {
+	margin: 0;
 	list-style: none;
 }
 
@@ -615,6 +696,7 @@ a {
 }
 
 .footer-social {
+	margin: 0;
 	list-style: none;
 }
 

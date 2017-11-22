@@ -9,27 +9,29 @@
   <body>
 		<header class="main-header">
 			<div class="container">
-			<a class="header-logo">
-				<span class="visually-hidden">Магазин «Девайс»</span>
-				<img src="img/header-logo.png" width="164" height="36" alt="Магазин «Девайс»">
-			</a>
-			<form class="header-search" action="https://echo.htmlacademy.ru" method="post">
-				<label class="visually-hidden" for="search-field">Поиск товаров</label>
-				<input class="input-search" type="search" id="search-field" name="search-field" placeholder="Поиск по сайту">
-				<button class="header-button" type="submit">Найти</button>
-			</form>
-			<ul class="user-navigation">
-				<li class="user-login">
-					<a class="user-link to-sign-in" href="#">Войти</a>
-				</li>
-				<li class="user-compare">
-					<a class="user-link to-compare" href="#">Сравнить</a>
-				</li>	
-				<li class="user-basket">
-					<a class="user-link to-basket" href="#">Корзина</a>
-				</li>	
-			</ul>	
-			<nav class="main-navigation">
+				<div class="main-header-wrapper">
+					<a class="header-logo">
+						<span class="visually-hidden">Магазин «Девайс»</span>
+						<img src="img/header-logo.png" width="164" height="36" alt="Магазин «Девайс»">
+					</a>
+					<form class="header-search" action="https://echo.htmlacademy.ru" method="post">
+						<label class="visually-hidden" for="search-field">Поиск товаров</label>
+						<input class="input-search" type="search" id="search-field" name="search-field" placeholder="Поиск по сайту">
+						<button class="header-button" type="submit">Найти</button>
+					</form>
+				<ul class="user-navigation">
+					<li class="user-login">
+						<a class="user-link to-sign-in" href="#">Войти</a>
+					</li>
+					<li class="user-compare">
+						<a class="user-link to-compare" href="#">Сравнить</a>
+					</li>	
+					<li class="user-basket">
+						<a class="user-link to-basket" href="#">Корзина</a>
+					</li>	
+				</ul>	
+			</div>
+				<nav class="main-navigation">
 				<ul class="site-navigation">
 					<li>
 					<span class="navigation-element">Каталог товаров</span>
@@ -67,7 +69,7 @@
 		</nav>
 	</div>
 	</header>
-		<main>
+		<main class="container">
 			<h1 class="visually-hidden">Магазин «Девайс»</h1>
 			<section class="popular-products-slider">
 				<h2 class="visually-hidden">Популярные товары</h2>
@@ -95,9 +97,12 @@
           </ul>
 					<ol class="-products-slides-list">
 						<li class="product-slide slide-selfie-stick">
-							<img src="img/slider-picture1.png" width="384" height="486" alt="Селфи-палка">
+							<div class="product-slide-picture">
+								<img src="img/slider-picture1.png" width="384" height="486" alt="Селфи-палка">
+							</div>
+							<div class="product-slide-description">
 							<b class="product-slide-title">Делай селфи, как Бен Стиллер!</b>
-							<p class="product-slide-description">
+							<p>
 								Самая длинная палка для селфи доступна в нашем магазине.
 								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
 							</p>
@@ -114,11 +119,15 @@
 									<th>Материал</th>
 								</tr>	
 							</table>
+						</div>
 						</li>
 						<li class="product-slide slide-fitness-bracelet">
-							<img src="img/slider-picture2.png" width="345" height="485" alt="Фитнес-браслет">
+							<div class="product-slide-picture">
+								<img src="img/slider-picture2.png" width="345" height="485" alt="Фитнес-браслет">
+							</div>
+							<div class="product-slide-description">
 							<b class="product-slide-title">Худеем правильно!</b>
-							<p class="product-slide-description">
+							<p>
 								Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
 							</p>
 							<a class="btn" href="#">Подробнее</a>
@@ -130,11 +139,15 @@
 									<th>Без подзарядки</th>
 								</tr>	
 							</table>
+						</div>
 						</li>
 						<li class="product-slide slide-quadcopter">
-							<img src="img/slider-picture3.png" width="526" height="334" alt="Квадрокоптер">
+							<div class="product-slide-picture">
+								<img src="img/slider-picture3.png" width="526" height="334" alt="Квадрокоптер">
+							</div>	
+							<div class="product-slide-description">
 							<b class="product-slide-title">Порхает как бабочка, жалит как пчела!</b>
-							<p class="product-slide-description">
+							<p>
 								Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
 							</p>
 							<a class="btn" href="#">Подробнее</a>
@@ -148,6 +161,7 @@
 									<th>Радиус поражения</th>
 								</tr>	
 							</table>
+						</div>
 						</li>
 					</ol>
 		  </section>
@@ -261,7 +275,7 @@
 			</section>
 			<section class="company-info">
 				<h2 class="visually-hidden">Информация о компании</h2>
-				<section class="info">
+				<section class="info-about-us">
 					<h3 class="info-title">О нас</h3>
 					<p class="info-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 					<p class="info-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
@@ -272,7 +286,7 @@
 					</ul>
 					<a class="btn" href="#">Подробнее о нас</a>
 			  </section>
-				<section class="info">
+				<section class="info-contacts">
 					<h3 class="info-title">Контакты</h3>
 					<p class="info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 					<a href="map.html">
@@ -284,14 +298,15 @@
 			</section>
 		</main>
 		<footer class="main-footer">
-			<div class="first-column">
+			<div class="container">
+			<div class="main-footer-wrapper">
 				<a class="footer-logo">
 					<span class="visually-hidden">Магазин «Девайс»</span>
 					<img src="img/footer-logo.png" width="163" height="36" alt="Магазин «Девайс»">
 				</a>
 				<p class="footer-address">г. Москва, ул. Строителей, 15</p>
 			</div>
-			<div class="second-column">
+			<div class="footer-navigation-wrapper">
 				<ul class="footer-navigation">
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Гарантия</a></li>
@@ -314,8 +329,8 @@
 						</a>
 					</li>
 				</ul>
-		</div>
-		<div class="third-column">
+			</div>
+		<div class="for-user-wrapper">
 			<ul class="footer-user-navigation">
 				<li><a class="user-sign-in" href="#">Войти</a></li>
 				<li><a class="user-compare" href="#">Сравнить</a></li>	
@@ -327,6 +342,7 @@
 				<img src="img/index-logo-html.svg" width="27" height="35" alt="Html Academy">
 			</a>
 		</div>	
+	</div>
 	</footer>
 	<section class="modal modal-feedback">
 		<h2 class="visually-hidden">Обратная связь</h2>
