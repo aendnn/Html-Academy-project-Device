@@ -28,11 +28,11 @@
 				</li>
 				<li class="user-compare">
 					<a class="user-link to-compare" href="#">Сравнить</a>
-				</li>	
+				</li>
 				<li class="user-basket">
 					<a class="user-link to-basket" href="#">Корзина</a>
-				</li>	
-			</ul>	
+				</li>
+			</ul>
 		</div>
 			<nav class="main-navigation">
 				<ul class="site-navigation">
@@ -86,6 +86,7 @@
 			</li>
 		</ul>
 		<div class="catalog-columns">
+      <div class="container">
 		<section class="filter-products">
 			<h2 class="section-title filter-products-title">Фильтр:</h2>
 			<form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
@@ -94,7 +95,7 @@
 				<div class="range" tabindex="0">
 					<span class="range-description">От 0</span>
 					<span class="range-description">до 5000</span>
-				</div> 
+				</div>
 			</fieldset>
 			<fieldset class="filter-color">
 			<legend class="filter-title">Цвет</legend>
@@ -113,11 +114,11 @@
 			<p class="filter-item">
 					<input class="visually-hidden filter-input" type="checkbox" id="red-color" name="red-color" disabled>
 					<label for="red-color">Красный</label>
-			</p>	
+			</p>
 			<p class="filter-item">
 					<input class="visually-hidden filter-input" type="checkbox" id="pink-color" name="pink-color">
-					<label for="pink-color">Розовый</label>	
-			</p>		
+					<label for="pink-color">Розовый</label>
+			</p>
 			</fieldset>
 			<fieldset class="filter-bluetooth">
 			 <legend class="filter-title">Bluetooth</legend>
@@ -128,12 +129,11 @@
 		<p class="filter-item">
 			<input class="visually-hidden filter-input" type="radio" id="no" name="bluetooth" value="bluetooth-off">
 			<label for="no">Нет</label>
-	   </p>	
-		</fieldset> 
-	<button class="btn btn-form">Показать</button>   
+	   </p>
+		</fieldset>
+	<button class="btn btn-form">Показать</button>
 	</form>
 </section>
-<section class="sort-catalog">
 	<h2 class="section-title sort-catalog-title">Сортировка:</h2>
 		<ul class="sort-list">
 			<li class="sort-item sort-current">По цене</li>
@@ -143,14 +143,13 @@
 				<a href="#">
 				<span class="visually-hidden">По возрастанию</span>
 				</a>
-			</li> 
+			</li>
 			<li class="sort-item">
 				<a href="#">
 					<span class="visually-hidden">По убыванию</span>
 				</a>
 			</li>
 		</ul>
-	</section>
 	<section class="catalog-products">
 		<h2 class="visually-hidden">Список моноподов для селфи</h2>
 		<ul class="products-list">
@@ -166,7 +165,7 @@
 						<a class="hover-link link-to-compare" href="#">Добавить к сравнению</a>
 					</div>
 				</article>
-				</li>	
+				</li>
 				<li>
 					<article class="product-item">
 					<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
@@ -209,6 +208,7 @@
 			</ul>
 		</section>
 	</div>
+</div>
 		<ul class="pagination-list">
 			<li>
 				<a class="pagination-item item-prev" href="#">Назад</a>
@@ -263,34 +263,34 @@
 		<div class="for-user-wrapper">
 			<ul class="footer-user-navigation">
 				<li><a class="user-sign-in" href="#">Войти</a></li>
-				<li><a class="user-compare" href="#">Сравнить</a></li>	
-				<li><a class="user-basket" href="#">Корзина</a></li>	
-			</ul>		
+				<li><a class="user-compare" href="#">Сравнить</a></li>
+				<li><a class="user-basket" href="#">Корзина</a></li>
+			</ul>
 			<p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
 			<a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">
 				<span class="visually-hidden">Перейти на страницу Html Academy</span>
 				<img src="img/index-logo-html.svg" width="27" height="35" alt="Html Academy">
 			</a>
 		</div>
-		</div>	
+		</div>
 	</footer>
 	 <section class="modal modal-feedback">
 			<h2 class="visually-hidden">Обратная связь</h2>
 			<form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
 				<p class="feedback-item">
 			<label for="name-field">Ваше имя:</label>
-			<input class="feedback-name" type="text" id="name-field" name="name-field" 
+			<input class="feedback-name" type="text" id="name-field" name="name-field"
 			placeholder="Представьтесь, пожалуйста">
-		  </p>	
+		  </p>
 		  <p class="feedback-item">
 			<label for="email-field">Ваш e-mail:</label>
-			<input class="feedback-email" type="text" id="email-field" name="email-field" 
+			<input class="feedback-email" type="text" id="email-field" name="email-field"
 			placeholder="Для отправки ответа">
-		  </p>	
+		  </p>
 		  <p class="feedback-item">
 			<label for="textarea-field">Текст письма</label>
 			<textarea class="feedback-text" id="textarea-field" placeholder="В свободной форме"></textarea>
-		  </p>	
+		  </p>
 		  <button class="btn" type="submit">Отправить</button>
 	 </form>
 	 <button class="modal-close" type="button">Закрыть</button>
@@ -301,7 +301,7 @@
 			<img src="img/map-big.jpg" width="960" height="559"
 			alt="Наш адрес: улица Строителей, 15">
 		</a>
-		<button class="modal-close" type="button">Закрыть</button>	
+		<button class="modal-close" type="button">Закрыть</button>
 	</section>
  </body>
 </html>
