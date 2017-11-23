@@ -210,7 +210,7 @@ a {
 }
 
 .user-navigation {
-	align-self: flex-end;
+	margin-left: auto;
 }
 
 .site-navigation {
@@ -242,7 +242,6 @@ a {
 
 .breadcrumbs {
 	display: flex;
-	justify-content: space-between;
 	margin: 0;
 	margin-bottom: 50px;
 	padding: 0;
@@ -267,7 +266,6 @@ a {
 
 .catalog-columns {
 	display: flex;
-	justify-content: space-between;
 }
 
 .section-title {
@@ -280,12 +278,12 @@ a {
 }
 
 .filter-products {
-  width: 270px;
-	background-color: #e6e6e6;
+	background-color: #dbdbdb;
 }
 
 .form-filter {
-	background-color: #efefef;
+   width: 200px;
+   background-color: #efefef;
 }
 
 .form-filter fieldset {
@@ -293,6 +291,7 @@ a {
 }
 
 .filter-title {
+  margin: 0;
 	font-family: "gilroy", "Arial", sans-serif;
 	font-weight: 900;
 }
@@ -303,6 +302,10 @@ a {
 	line-height: 22px;
 	font-weight: 300;
 	color: rgba(0, 0, 0, 0.2);
+}
+
+.filter-item {
+  margin: 0;
 }
 
 .filter-item label {
@@ -319,14 +322,13 @@ a {
 }
 
 .sort-catalog {
-	width: 760px;
-	background-color: #f2f2f2;
+   margin-bottom: 70px;
+	background-color: #ebebeb;
 }
 
 .sort-list {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  width: 300px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -358,20 +360,29 @@ a {
 }
 
 .catalog-products {
-	width: 760px;
+	width: 720px;
 }
 
 .products-list {
+  display: flex;
+  flex-wrap: wrap;
 	margin: 0;
+  margin-left: 73px;
 	padding: 0;
 	list-style: none;
 }
 
-.product-item {
+.catalog-products li {
 	width: 360px;
+  margin-right: 40px;
+}
+
+.catalog-products li:nth-child(2n) {
+  margin: 0;
 }
 
 .item-title{
+  margin: 0;
 	font-size: 18px;
 	line-height: 23px;
 	font-weight: 900;
@@ -382,6 +393,7 @@ a {
 }
 
 .item-price {
+  margin: 0;
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 20px;
@@ -502,6 +514,7 @@ a {
 }
 
 .btn-form {
+  width: 200px;
 	background-image: none;
 	background-image: linear-gradient(to top, #efefef, #efefef 35%, #f0c52e 35%, #f0c52e 70%, #efefef 70%, #efefef);
 }
@@ -601,6 +614,7 @@ a {
 
 .services-slides-list {
 	display: flex;
+  flex-direction: column;
 	margin-bottom: 105px;
 }
 
