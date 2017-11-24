@@ -219,30 +219,33 @@ a {
 }
 
 .user-navigation {
-	display: flex;
-	justify-content: space-between;
-	margin-left: auto;
+  display: flex;
+  width: 500px;
+  margin-left: auto;
 }
 
-.user-navigation li {
-	margin-right: 35px;
+.user-link {
+  display: block;
+  padding-left: 20px;
 }
 
-.user-navigation .user-login {
-	margin-right: 180px;
+
+.user-login {
+  margin-right: auto;
 }
 
+.user-compare,
 .catalog-page .user-login {
-	margin-right: 20px;
+  margin-right: 20px;
+}
+
+.user-basket {
+  margin-left: auto;
 }
 
 .catalog-page .user-logout {
-	margin-right: 60px;
-	color: rgba(0, 0, 0, 0.3);
-}
-
-.user-navigation li:last-child {
-	margin: 0;
+  margin-right: 60px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-navigation {
@@ -681,7 +684,7 @@ a {
 	color: #000000;
 }
 
-.brands-list { 
+.brands-list {
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
