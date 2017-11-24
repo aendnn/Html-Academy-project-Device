@@ -214,6 +214,10 @@ a {
 	opacity: 0.3;
 }
 
+.user-logout .to-logout {
+	color: rgba(0, 0, 0, 0.3);
+}
+
 .user-navigation {
 	display: flex;
 	justify-content: space-between;
@@ -226,6 +230,15 @@ a {
 
 .user-navigation .user-login {
 	margin-right: 180px;
+}
+
+.catalog-page .user-login {
+	margin-right: 20px;
+}
+
+.catalog-page .user-logout {
+	margin-right: 60px;
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .user-navigation li:last-child {
@@ -291,13 +304,14 @@ a {
 .breadcrumbs {
 	display: flex;
 	justify-content: space-between;
+	width: 395px;
 	margin: 0;
 	margin-bottom: 50px;
 	padding: 0;
 	list-style: none;
 }
 
-.breadcrumbs a {
+.breadcrumbs-item {
 	font-family: "open_sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 36px;
@@ -305,11 +319,11 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.breadcrumbs a:hover {
+.breadcrumbs-item:not(.breadcrumbs-current):hover {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.breadcrumbs a:active {
+.breadcrumbs a:not(.breadcrumbs-current):active {
 	color: rgba(0, 0, 0, 0.1);
 }
 
@@ -321,6 +335,7 @@ a {
 .section-title {
 	width: 200px;
 	margin: 0;
+	padding: 25px 0;
 	font-size: 16px;
 	line-height: 20px;
 	text-transform: uppercase;
