@@ -9,32 +9,32 @@
   <body>
 		<header class="main-header">
 			<div class="container">
-				<div class="main-header-wrapper">
-					<a class="header-logo">
-						<span class="visually-hidden">Магазин «Девайс»</span>
-						<img src="img/header-logo.png" width="164" height="36" alt="Магазин «Девайс»">
-					</a>
+				<a class="header-logo">
+					<span class="visually-hidden">Магазин «Девайс»</span>
+					<img src="img/header-logo.png" width="164" height="36" alt="Магазин «Девайс»">
+				</a>
+				<div class="header-row-wrapper">
 					<form class="header-search" action="https://echo.htmlacademy.ru" method="post">
 						<label class="visually-hidden" for="search-field">Поиск товаров</label>
 						<input class="input-search" type="search" id="search-field" name="search-field" placeholder="Поиск по сайту">
 						<button class="header-button" type="submit">Найти</button>
 					</form>
-				<ul class="user-navigation">
-					<li class="user-login">
-						<a class="user-link to-sign-in" href="#">Войти</a>
-					</li>
-					<li class="user-compare">
-						<a class="user-link to-compare" href="#">Сравнить</a>
-					</li>	
-					<li class="user-basket">
-						<a class="user-link to-basket" href="#">Корзина</a>
-					</li>	
-				</ul>	
-			</div>
+					<ul class="user-navigation">
+						<li class="user-login">
+							<a class="user-link to-sign-in" href="#">Войти</a>
+						</li>
+						<li class="user-compare">
+							<a class="user-link to-compare" href="#">Сравнить</a>
+						</li>	
+						<li class="user-basket">
+							<a class="user-link to-basket" href="#">Корзина</a>
+						</li>	
+					</ul>	
+				</div>
 				<nav class="main-navigation">
-				<ul class="site-navigation">
+					<ul class="site-navigation">
 					<li>
-					<span class="navigation-element">Каталог товаров</span>
+					<span class="navigation-element catalog-menu-products">Каталог товаров</span>
 						<ul class="catalog-menu">
 							<li>
 								<a class="catalog-element" href="#">Виртуальная реальность</a>
@@ -69,136 +69,148 @@
 		</nav>
 	</div>
 	</header>
-		<main class="container">
-			<h1 class="visually-hidden">Магазин «Девайс»</h1>
-			<section class="popular-products-slider">
-				<h2 class="visually-hidden">Популярные товары</h2>
-					<ul class="radio-list">
-						<li class="slide-radio">
-							<input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
-						</li>
-						<li class="slide-radio">	
-	          	<input class="visually-hidden" type="radio" id="btn-2" name="toggle">
-	          </li>
-	          <li class="slide-radio">	
-	          	<input class="visually-hidden" type="radio" id="btn-3" name="toggle">
-	          </li>
-	        </ul> 
-          <ul class="slider-switches">
-          	<li class="radio-switch">
-          		<button class="products-btn" type="button"></button>
-          	</li>
-          	<li class="radio-switch">
-          		<button class="products-btn" type="button"></button>
-            </li>
-            <li class="radio-switch">
-            	<button class="products-btn" type="button"></button>
-            </li>	
-          </ul>
-					<ol class="-products-slides-list">
-						<li class="product-slide slide-selfie-stick">
-							<div class="product-slide-picture">
-								<img src="img/slider-picture1.png" width="384" height="486" alt="Селфи-палка">
-							</div>
-							<div class="product-slide-description">
-							<b class="product-slide-title">Делай селфи, как Бен Стиллер!</b>
-							<p>
-								Самая длинная палка для селфи доступна в нашем магазине.
-								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-							</p>
-							<a class="btn" href="#">Подробнее</a>
-							<table class="slide-characteristics">
-								<tr>
-									<td>8,5 м</td>
-									<td>5 кг</td>
-									<td>Карбон</td>
-								</tr>
-								<tr>
-									<th>Длина палки</th>
-									<th>Вес палки</th>
-									<th>Материал</th>
-								</tr>	
-							</table>
-						</div>
-						</li>
-						<li class="product-slide slide-fitness-bracelet">
-							<div class="product-slide-picture">
-								<img src="img/slider-picture2.png" width="345" height="485" alt="Фитнес-браслет">
-							</div>
-							<div class="product-slide-description">
-							<b class="product-slide-title">Худеем правильно!</b>
-							<p>
-								Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
-							</p>
-							<a class="btn" href="#">Подробнее</a>
-							<table class="slide-characteristics">
-								<tr>
-									<td>48 часов</td>
-								</tr>
-								<tr>
-									<th>Без подзарядки</th>
-								</tr>	
-							</table>
-						</div>
-						</li>
-						<li class="product-slide slide-quadcopter">
-							<div class="product-slide-picture">
-								<img src="img/slider-picture3.png" width="526" height="334" alt="Квадрокоптер">
-							</div>	
-							<div class="product-slide-description">
-							<b class="product-slide-title">Порхает как бабочка, жалит как пчела!</b>
-							<p>
-								Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-							</p>
-							<a class="btn" href="#">Подробнее</a>
-							<table class="slide-characteristics">
-								<tr>
-									<td>800 м</td>
-									<td>50 м</td>
-								</tr>
-								<tr>
-									<th>Дальность полета</th>
-									<th>Радиус поражения</th>
-								</tr>	
-							</table>
-						</div>
-						</li>
-					</ol>
-		  </section>
-			<ul class="catalog-list">
-				<li class="catalog-item">
-					<a href="#">
+	<main class="container">
+		<h1 class="visually-hidden">Магазин «Девайс»</h1>
+		<section class="popular-products-slider">
+			<h2 class="visually-hidden">Популярные товары</h2>
+			<ul class="radio-list">
+				<li class="slide-radio">
+					<input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+				</li>
+				<li class="slide-radio">	
+	        <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+	      </li>
+	      <li class="slide-radio">	
+	        <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
+	      </li>
+	    </ul> 
+      <ul class="slider-switches">
+        <li class="radio-switch">
+          <button class="products-btn" type="button"></button>
+        </li>
+        <li class="radio-switch">
+          <button class="products-btn" type="button"></button>
+        </li>
+        <li class="radio-switch">
+          <button class="products-btn" type="button"></button>
+        </li>	
+      </ul>
+			<ol class="products-slides-list">
+				<li class="product-slide slide-selfie-stick">
+					<div class="product-slide-picture">
+						<img src="img/slider-picture1.png" width="384" height="486" alt="Селфи-палка">
+					</div>
+					<div class="product-slide-description">
+						<b class="product-slide-title">Делай селфи, как Бен Стиллер!</b>
+						<p>
+							Самая длинная палка для селфи доступна в нашем магазине.
+							Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+						</p>
+						<a class="btn" href="#">Подробнее</a>
+						<table class="slide-characteristics">
+							<tr>
+								<td>8,5 м</td>
+								<td>5 кг</td>
+								<td>Карбон</td>
+							</tr>
+							<tr>
+								<th>Длина палки</th>
+								<th>Вес палки</th>
+								<th>Материал</th>
+							</tr>	
+						</table>
+					</div>
+				</li>
+				<li class="product-slide slide-fitness-bracelet">
+					<div class="product-slide-picture">
+						<img src="img/slider-picture2.png" width="345" height="485" alt="Фитнес-браслет">
+					</div>
+					<div class="product-slide-description">
+						<b class="product-slide-title">Худеем правильно!</b>
+						<p>
+							Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+						</p>
+						<a class="btn" href="#">Подробнее</a>
+						<table class="slide-characteristics">
+							<tr>
+								<td>48 часов</td>
+							</tr>
+							<tr>
+								<th>Без подзарядки</th>
+							</tr>	
+						</table>
+					</div>
+				</li>
+				<li class="product-slide slide-quadcopter">
+					<div class="product-slide-picture">
+						<img src="img/slider-picture3.png" width="526" height="334" alt="Квадрокоптер">
+					</div>	
+					<div class="product-slide-description">
+						<b class="product-slide-title">Порхает как бабочка, жалит как пчела!</b>
+						<p>
+							Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+						</p>
+						<a class="btn" href="#">Подробнее</a>
+						<table class="slide-characteristics">
+							<tr>
+								<td>800 м</td>
+								<td>50 м</td>
+							</tr>
+							<tr>
+								<th>Дальность полета</th>
+								<th>Радиус поражения</th>
+							</tr>	
+						</table>
+					</div>
+				</li>
+			</ol>
+		</section>
+		<ul class="catalog-list">
+			<li class="catalog-item">
+				<a href="#">
+					<div class="picture-item">
 						<img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
-						<strong class="item-title">Виртуальная реальность</strong>
-					</a>	
-				</li>
-				<li class="catalog-item">
-					<a href="#">
+					</div>
+					<strong class="item-title">Виртуальная реальность</strong>
+				</a>	
+			</li>
+			<li class="catalog-item">
+				<a href="#">
+					<div class="picture-item">
 						<img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
-						<strong class="item-title">Моноподы для селфи</strong>
-					</a>	
-				</li>
-				<li class="catalog-item">
-					<a href="#">
+					</div>
+					<strong class="item-title">Моноподы для селфи</strong>
+				</a>	
+			</li>
+			<li class="catalog-item">
+				<a href="#">
+					<div class="picture-item">
 						<img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+					</div>
 						<strong class="item-title">Экшн-камеры</strong>
 					</a>	
 				</li>
 				<li class="catalog-item">
 					<a href="#">
-						<img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+						<div class="picture-item">
+							<img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+						</div>
 						<strong class="item-title">Фитнес-браслеты</strong>
 					</a>	
 				</li>
 				<li class="catalog-item">
 					<a href="#">
-						<img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+						<div class="picture-item">
+							<img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+						</div>
 						<strong class="item-title">Умные часы</strong>
 					</a>	
 				</li>
 				<li class="catalog-item">
 					<a href="#">
-						<img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+						<div class="picture-item">
+							<img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+						</div>
 						<strong class="item-title">Квадрокоптеры</strong>
 					</a>	
 				</li>
@@ -289,7 +301,7 @@
 				<section class="info-contacts">
 					<h3 class="info-title">Контакты</h3>
 					<p class="info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-					<a href="map.html">
+					<a class="info-map" href="map.html">
 						<img src="img/map.jpg" width="560" height="222"
 						 alt="Наш адрес: улица Строителей, 15">
 					</a>
@@ -337,10 +349,12 @@
 				<li><a class="user-basket" href="#">Корзина</a></li>	
 			</ul>		
 			<p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
-			<a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">
-				<span class="visually-hidden">Перейти на страницу Html Academy</span>
-				<img src="img/index-logo-html.svg" width="27" height="35" alt="Html Academy">
-			</a>
+			<div class="logo-academy-wrapper">
+				<a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+					<span class="visually-hidden">Перейти на страницу Html Academy</span>
+					<img src="img/index-logo-html.svg" width="27" height="35" alt="Html Academy">
+				</a>
+			</div>
 		</div>	
 	</div>
 	</footer>

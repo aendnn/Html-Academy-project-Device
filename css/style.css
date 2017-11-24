@@ -62,18 +62,15 @@ a {
 }
 
 .main-header {
-	margin-top: 42px;
 	font-size: 15px;
 	line-height: 36px;
 	color: #000000;
 	background-color: #f7e296;
+	padding-bottom: 165px;
 }
 
-.main-header-wrapper {
+.header-row-wrapper {
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
 	margin-bottom: 50px;
 }
 
@@ -92,6 +89,7 @@ a {
 }
 
 .header-logo {
+	display: block;
 	width: 164px;
 	height: 36px;
 	margin-bottom: 35px;
@@ -168,20 +166,27 @@ a {
 }
 
 .header-button {
+	opacity: 0;
 	background-color: transparent;
 	border: 2px solid #000000;
 }
 
 .header-button:hover {
+	opacity: 1;
 	color: rgb(255, 255, 255);
 	background-color: #000000;
 	border: 2px solid #000000;
 }
 
 .header-button:active {
+	opacity: 1;
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #000000;
 	border: 2px solid #000000;
+}
+
+.input-search:focus + .header-button {
+	opacity: 1;
 }
 
 .user-navigation,
@@ -210,25 +215,68 @@ a {
 }
 
 .user-navigation {
-	align-self: flex-end;
+	display: flex;
+	justify-content: space-between;
+	margin-left: auto;
+}
+
+.user-navigation li {
+	margin-right: 35px;
+}
+
+.user-navigation .user-login {
+	margin-right: 180px;
+}
+
+.user-navigation li:last-child {
+	margin: 0;
+}
+
+.main-navigation {
+	display: flex;
 }
 
 .site-navigation {
 	display: flex;
-	justify-content: space-around;
-}
-
-.catalog-menu {
-	margin-bottom: 40px;
+	align-items: stretch;
+	align-content: stretch;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
 .navigation-element {
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 18px;
-	line-height: 23px;
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+.navigation-element {
+	margin-right: 35px;
+}
+
+.navigation-element:first-child {
+	margin-right: 320px;
+}
+
+.navigation-element:nth-child(3) {
+	margin-right: 109px;
+}
+
+.navigation-element:last-child {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.catalog-menu {
+	height: 0;
+	overflow: hidden;
+}
+
+.catalog-menu-products:hover + .catalog-menu {
+	height: auto;
 }
 
 /* стилизация каталога  */
@@ -447,6 +495,7 @@ a {
 /* конец стилизации каталога */
 
 .popular-products-slider {
+	padding-bottom: 105px;
 	color: #464646;
 	background-color: #ffffff;
 }
@@ -534,18 +583,19 @@ a {
 .catalog-list {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	flex-wrap: wrap;
 	margin: 0;
-	margin-bottom: 85px;
+	margin-bottom: 80px;
+	padding: 0;
 	list-style: none;
 }
 
-.catalog-item {
-	width: 160px;
+.picture-item {
+		width: 160px;
 	background-color: #f7e296;
 }
 
-.catalog-item:hover {
+.picture-item:hover {
 	background-color: #f0c52e;
 }
 
@@ -620,7 +670,9 @@ a {
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
+	margin-bottom: 55px;
 	padding: 0;
+	padding-bottom: 105px;
 	list-style: none;
 }
 
@@ -661,8 +713,22 @@ a {
 	width: 600px;
 }
 
+.info-title {
+	margin: 0;
+	margin-bottom: 45px;
+
+}
+
+.info-text {
+	margin: 0;
+	margin-bottom: 35px;
+}
+
+
 .transport-companies {
 	margin: 0;
+	margin-top: 75px;
+	margin-bottom: 70px;
 	padding: 0;
 	list-style: none;
 }
@@ -675,6 +741,12 @@ a {
 	color: #000000;
 }
 
+.info-map {
+	display: block;
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+
 .catalog-page .main-footer {
 	font-family: "open_sans", "Arial", sans-serif;
 	font-weight: 300;
@@ -683,9 +755,10 @@ a {
 }
 
 .main-footer {
+	margin-top: 90px;
+	padding: 65px 0;
 	color: #ffffff;
 	background-color: #464646;
-	margin-top: 90px;
 }
 
 .main-footer .container {
@@ -693,7 +766,8 @@ a {
 }
 
 .main-footer-wrapper {
-	width: 200px;
+	width: 205px;
+	margin-right: auto;
 }
 
 .footer-logo {
@@ -708,11 +782,21 @@ a {
 	opacity: 0.3;
 }
 
+.footer-address {
+	margin: 0;
+	margin-top: 25px;
+}
+
 .footer-navigation-wrapper {
 	width: 440px;
+	align-self: center;
 }
 
 .footer-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -735,12 +819,38 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.social-btn {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.social-btn:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.social-btn:active {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
 .for-user-wrapper {
-	width: 360px;
+	margin-left: auto;
 }
 
 .footer-user-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 325px;
 	margin: 0;
+	margin-bottom: 40px;
 	padding: 0;
 	list-style: none;
 }
@@ -758,22 +868,17 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-social {
+.footer-phone {
+	width: 165px;
 	margin: 0;
-	padding: 0;
-	list-style: none;
+	margin-left: auto;
 }
 
-.social-btn {
-	background-color: rgba(255, 255, 255, 0.3);
-}
-
-.social-btn:hover {
-	background-color: rgba(255, 255, 255, 0.6);
-}
-
-.social-btn:active {
-	background-color: rgba(255, 255, 255, 0.1);
+.logo-academy-wrapper {
+	width: 27px;
+	height: 36px;
+	margin-top: 65px;
+	margin-left: auto;
 }
 
 .logo-academy {
