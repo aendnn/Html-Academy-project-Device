@@ -355,7 +355,6 @@ a {
 }
 
 .form-filter {
-  min-height: 1200px;
   padding-top: 70px;
 	background-color: #efefef;
 }
@@ -376,12 +375,66 @@ a {
 	font-weight: 900;
 }
 
-.range-description {
+.filter-range {
+  width: 200px;
+  min-height: 30px;
+}
+
+.range-controls {
+  position: relative;
+}
+
+.toggle {
+  position: absolute;
+  top: -10px;
+  left: -5px;
+  width:20px;
+  height:23px;
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.toggle-min {
+  left: -5px;
+}
+
+.toggle-max {
+  left: 110px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: #dbdbdb;
+}
+
+.range-controls .bar {
+  height: 2px;
+  width: 110px;
+  background-color: #91c92f;
+}
+
+* .price-controls {
+  position: relative;
+}
+
+.range-price {
+  position: absolute;  /* временно такое позиционирование*/
+  top: 10px;
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 22px;
 	font-weight: 300;
 	color: rgba(0, 0, 0, 0.2);
+}
+
+.min-price {
+  left: 0px;
+
+}
+
+.max-price {
+  left: 90px;
 }
 
 .filter-item {
