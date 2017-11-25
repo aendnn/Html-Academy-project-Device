@@ -49,8 +49,8 @@
         </div>
         <nav class="main-navigation">
           <ul class="site-navigation">
-          <li>
-          <span class="navigation-element catalog-menu-products">Каталог товаров</span>
+          <li class="nav-catalog">
+          <span class="navigation-element">Каталог товаров</span>
             <ul class="catalog-menu">
               <li>
                 <a class="catalog-element" href="#">Виртуальная реальность</a>
@@ -89,40 +89,18 @@
     <h1 class="visually-hidden">Магазин «Девайс»</h1>
     <section class="popular-products-slider">
       <h2 class="visually-hidden">Популярные товары</h2>
-      <ul class="radio-list">
-        <li class="slide-radio">
-          <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
-        </li>
-        <li class="slide-radio">
-          <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
-        </li>
-        <li class="slide-radio">
-          <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
-        </li>
-      </ul>
-      <ul class="slider-switches">
-        <li class="radio-switch">
-          <button class="products-btn" type="button"></button>
-        </li>
-        <li class="radio-switch">
-          <button class="products-btn" type="button"></button>
-        </li>
-        <li class="radio-switch">
-          <button class="products-btn" type="button"></button>
-        </li>
-      </ul>
       <ol class="products-slides-list">
         <li class="product-slide slide-selfie-stick">
           <div class="product-slide-picture">
             <img src="img/slider-picture1.png" width="384" height="486" alt="Селфи-палка">
           </div>
           <div class="product-slide-description">
-            <b class="product-slide-title">Делай селфи, как Бен Стиллер!</b>
+            <b class="product-slide-title">Делай селфи,<br> как Бен Стиллер!</b>
             <p>
               Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
-            <a class="btn" href="#">Подробнее</a>
+            <a class="btn btn-slide" href="#">Подробнее</a>
             <table class="slide-characteristics">
               <tr>
                 <td>8,5 м</td>
@@ -142,11 +120,11 @@
             <img src="img/slider-picture2.png" width="345" height="485" alt="Фитнес-браслет">
           </div>
           <div class="product-slide-description">
-            <b class="product-slide-title">Худеем правильно!</b>
+            <b class="product-slide-title">Худеем<br> правильно!</b>
             <p>
               Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
             </p>
-            <a class="btn" href="#">Подробнее</a>
+            <a class="btn btn-slide" href="#">Подробнее</a>
             <table class="slide-characteristics">
               <tr>
                 <td>48 часов</td>
@@ -166,7 +144,7 @@
             <p>
               Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
             </p>
-            <a class="btn" href="#">Подробнее</a>
+            <a class="btn btn-slide" href="#">Подробнее</a>
             <table class="slide-characteristics">
               <tr>
                 <td>800 м</td>
@@ -180,6 +158,28 @@
           </div>
         </li>
       </ol>
+      <ul class="radio-list">
+        <li class="slide-radio">
+          <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+        </li>
+        <li class="slide-radio">
+          <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+        </li>
+        <li class="slide-radio">
+          <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
+        </li>
+      </ul>
+      <ul class="slider-switches">
+        <li class="radio-switch">
+          <label class="active"></label>
+        </li>
+        <li class="radio-switch">
+          <label></label>
+        </li>
+        <li class="radio-switch">
+          <label></label>
+        </li>
+      </ul>
     </section>
     <ul class="catalog-list">
       <li class="catalog-item">
@@ -246,13 +246,13 @@
            </ul>
         <ul class="services-slider-switches">
           <li>
-            <button class="btn services-btn" type="button">Доставка</button>
+            <label>Доставка</label>
           </li>
           <li>
-            <button class="btn services-btn" type="button">Гарантия</button>
+            <label>Гарантия</label>
           </li>
           <li>
-            <button class="btn services-btn" type="button">Кредит</button>
+            <label>Кредит</label>
           </li>
         </ul>
         <ul class="services-slides-list">
@@ -263,7 +263,7 @@
           <li class="services-slide slide-guarantee">
             <h3 class="services-slide-title">Гарантия</h3>
             <p class="services-slide-description">
-            Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+            Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
             Товар, не дом, конечно же.
           </p>
         </li>
@@ -361,7 +361,7 @@
     <div class="for-user-wrapper">
       <ul class="footer-user-navigation">
         <li>
-          <a class="user-sign-in" href="#">
+          <a class="footer-user footer-user-sign-in" href="#">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
               <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
@@ -371,7 +371,7 @@
           </a>
         </li>
         <li>
-          <a class="user-compare" href="#">
+          <a class="footer-user footer-user-compare" href="#">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10"><rect x="8" y="2" width="1.984" height="8"></rect>
                   <rect y="3" width="1.984" height="7"></rect>
                   <rect x="4" width="2" height="10"></rect>
@@ -380,7 +380,7 @@
           </a>
         </li>
         <li>
-          <a class="user-basket" href="#">
+          <a class="footer-user footer-user-basket" href="#">
             <svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 12 12"><g><path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022 c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438 c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595 c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"></path>
                 <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079 c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84 C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"></path>
               </g>

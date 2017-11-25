@@ -111,7 +111,7 @@ input[type="radio"].visually-hidden {
   top: -18px;
 	width: 164px;
 	height: 36px;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 }
 
 .header-logo img {
@@ -259,30 +259,28 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   width: 500px;
   margin-left: auto;
+  margin-right: 60px;
 }
 
-.user-navigation li:last-child {
-  padding-right: 0;
+.user-link svg {
+  margin-right: 10px;
 }
 
 .user-login {
-  margin-right: auto;
-}
-
-.user-link {
-  padding-left: 25px;
-}
-
-/*
-
-.user-compare,
-.catalog-page .user-login {
   margin-right: 20px;
 }
-*/
+
+.user-compare {
+  margin-left: 200px;
+}
+
 .user-basket {
   margin-left: auto;
-  margin-right: 60px;
+}
+
+.catalog-page .user-compare {
+  margin: 0;
+  margin-left: 85px;
 }
 
 .main-navigation {
@@ -292,7 +290,26 @@ input[type="radio"].visually-hidden {
 .site-navigation {
 	display: flex;
 	flex-wrap: wrap;
-	width: 100%;
+}
+
+.nav-catalog {
+  position: relative;
+  padding-right: 30px;
+  margin-right: 300px;
+}
+
+.nav-catalog::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+  cursor: pointer;
 }
 
 .navigation-element {
@@ -304,12 +321,22 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
+.navigation-element:nth-child(2) {
+  margin-right: 40px;
+}
+
+.navigation-element:nth-child(3) {
+  margin-right: 112px;
+}
+
+/*
+
 .navigation-element {
 	padding-right: 35px;
 }
 
 .navigation-element:first-child {
-	margin-right: 290px;
+	margin-left: aut0;
 }
 
 .navigation-element:nth-child(3) {
@@ -321,12 +348,14 @@ input[type="radio"].visually-hidden {
 
 }
 
+*/
+
 .catalog-menu {
 	height: 0;
 	overflow: hidden;
 }
 
-.catalog-menu-products:hover + .catalog-menu {
+.nav-catalog:hover ~ .catalog-menu {
 	height: auto;
 }
 
@@ -453,7 +482,7 @@ input[type="radio"].visually-hidden {
   background-color: #91c92f;
 }
 
-* .price-controls {
+.price-controls {
   position: relative;
 }
 
@@ -663,7 +692,8 @@ input[type="radio"].visually-hidden {
 /* конец стилизации каталога */
 
 .popular-products-slider {
-	padding-bottom: 105px;
+  position: relative;
+	padding-bottom: 110px;
 	color: #464646;
 	background-color: #ffffff;
 }
@@ -673,6 +703,52 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+.products-slides-list {
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.slider-switches {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.slider-switches li {
+  width: 12px;
+  height: 12px;
+}
+
+.slider-switches label {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: red;
+}
+
+.slider-switches li::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: 5px;
+  height: 5px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.product-slide {
+  display: none;
+}
+
+.product-slide:first-child {
+  display: block;
 }
 
 .product-slide-picture {
@@ -690,6 +766,7 @@ input[type="radio"].visually-hidden {
 
 .product-slide-title {
 	width: 500px;
+  margin-bottom: 30px;
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 47px;
 	line-height: 61px;
@@ -700,6 +777,11 @@ input[type="radio"].visually-hidden {
 .product-slide-description p {
 	width: 460px;
 	margin: 0;
+  margin-bottom: 60px;
+}
+
+.slide-fitness-bracelet {
+  width: 480px;
 }
 
 .btn {
@@ -715,6 +797,10 @@ input[type="radio"].visually-hidden {
 	background-image: linear-gradient(to top, #ffffff, #ffffff 35%, #f0c52e 35%, #f0c52e 70%, #ffffff 70%, #ffffff);
 	border: none;
 	cursor: pointer;
+}
+
+.btn-slide {
+  margin-bottom: 65px;
 }
 
 .btn-form {
@@ -979,18 +1065,18 @@ input[type="radio"].visually-hidden {
 	color: rgb(255, 255, 255);
 }
 
-.user-sign-in path,
-.user-compare rect,
-.user-basket path {
+.footer-user-sign-in path,
+.footer-user-compare rect,
+.footer-user-basket path {
   fill: #ffc600;
 }
 
-.footer-navigation a:hover {
-	color: rgba(255, 255, 255, 0.6);
+.footer-user:hover {
+	opacity: 0.6;
 }
 
-.footer-navigation a:active{
-	color: rgba(255, 255, 255, 0.3);
+.footer-user:active{
+	opacity: 0.3;
 }
 
 .footer-social {
