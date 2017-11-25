@@ -48,6 +48,26 @@ a {
 	text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
 	width: 1160px;
 	margin: 0 auto;
@@ -62,24 +82,22 @@ a {
 }
 
 .main-header {
+  margin-top: 40px;
+  padding-bottom: 165px;
 	font-size: 15px;
 	line-height: 36px;
 	color: #000000;
-	background-color: #f7e296;
-	padding-bottom: 165px;
+
+}
+
+.main-header .container {
+  padding-bottom: 165px;
+  background-color: #f7e296;
 }
 
 .header-row-wrapper {
 	display: flex;
 	margin-bottom: 50px;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
 }
 
 .catalog-page .main-header {
@@ -89,7 +107,8 @@ a {
 }
 
 .header-logo {
-	display: block;
+	position: relative;
+  top: -18px;
 	width: 164px;
 	height: 36px;
 	margin-bottom: 35px;
@@ -108,8 +127,23 @@ a {
 }
 
 .header-search {
+  position: relative;
+  padding-left: 40px;
 	width: 230px;
 	font-size: 0;
+}
+
+.header-search::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .input-search,
@@ -166,9 +200,11 @@ a {
 }
 
 .header-button {
+  padding-bottom: 1px;
 	opacity: 0;
 	background-color: transparent;
 	border: 2px solid #000000;
+  border-bottom-width: 2px;
 }
 
 .header-button:hover {
@@ -220,12 +256,9 @@ a {
 
 .user-navigation {
   display: flex;
+  flex-wrap: wrap;
   width: 500px;
   margin-left: auto;
-}
-
-.user-navigation li {
-  padding-right: 20px;
 }
 
 .user-navigation li:last-child {
@@ -236,11 +269,17 @@ a {
   margin-right: auto;
 }
 
+.user-link {
+  padding-left: 25px;
+}
+
+/*
+
 .user-compare,
 .catalog-page .user-login {
   margin-right: 20px;
 }
-
+*/
 .user-basket {
   margin-left: auto;
   margin-right: 60px;
@@ -419,7 +458,7 @@ a {
 }
 
 .range-price {
-  position: absolute;  /* временно такое позиционирование*/
+  position: absolute;  /* временное позиционирование*/
   top: 10px;
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 14px;
@@ -938,6 +977,12 @@ a {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: rgb(255, 255, 255);
+}
+
+.user-sign-in path,
+.user-compare rect,
+.user-basket path {
+  fill: #ffc600;
 }
 
 .footer-navigation a:hover {
