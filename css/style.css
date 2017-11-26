@@ -861,8 +861,8 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin: 0;
-	margin-bottom: 80px;
 	padding: 0;
+	padding-bottom: 165px;
 	list-style: none;
 }
 
@@ -900,6 +900,12 @@ input[type="radio"].visually-hidden {
 	background-color: #e5e5e5;
 }
 
+.our-services-slider .container {
+	display: flex;
+	padding-bottom: 150px;
+	margin-bottom: 95px;
+}
+
 .services-switch {
 	width: 160px;
 	font-family: "gilroy", "Arial", sans-serif;
@@ -913,9 +919,25 @@ input[type="radio"].visually-hidden {
 }
 
 .services-slider-switches {
+	position: relative;
 	display: flex;
 	flex-direction: column;
   align-content: center;
+  width: 285px;
+}
+
+.services-slider-switches::after {
+	content: "";
+	position: absolute;
+	top: -80px;
+	right: 0;
+	width: 7px;
+	height: 319px;
+	background-color: #000000;
+}
+
+.services-switch {
+	margin-bottom: 30px;
 }
 
 .services-switch:active {
@@ -924,22 +946,77 @@ input[type="radio"].visually-hidden {
 	background-image: linear-gradient(to top, #000000, #000000)
 }
 
-.services-slides-list {
+.services-slide {
+	position: relative;
 	display: flex;
-	margin-bottom: 105px;
+	flex-direction: column;
+	align-content: flex-end;
+	width: 460px;
+	margin-left: 120px;
+	padding-right: 300px;
+	display: none;
 }
 
-.services-slides-list li {
-	width: 720px;
+.services-slide:nth-child(1) {
+	display: block;
 }
+
+
+.slide-delivery::after {
+	content: "";
+	position: absolute;
+	top: -15px;
+	right: 50px;
+	width: 136px;
+	height: 164px;
+	background-image: url("../img/delivery.svg");
+	background-repeat: no-repeat;
+}
+
+.slide-guarantee::after {
+	content: "";
+	position: absolute;
+	top: -35px;
+	right: 0;
+	width: 171px;
+	height: 195px;
+	background-image: url("../img/warranty.svg");
+	background-repeat: no-repeat;
+}
+
+.slide-credit .services-slide-description {
+	width: 425px;
+}
+
+.slide-credit::after {
+	content: "";
+	position: absolute;
+	top: -30px;
+	right: 30px;
+	width: 156px;
+	height: 188px;
+	background-image: url("../img/credit.svg");
+	background-repeat: no-repeat;
+}
+
+.services-slide-title {
+	position: relative;
+	top: -30px;
+}
+
 
 .services-slide-title,
 .info-title {
+	margin: 0;
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 47px;
 	line-height: 61px;
 	font-weight: 900;
 	color: #000000;
+}
+
+.services-slide-description {
+	margin: 0;
 }
 
 .brands-list {
