@@ -72,7 +72,7 @@
               </li>
             </ul>
           </li>
-        <li class="navigation-element">
+        <li class="navigation-element element-delivery">
           <a href="#">Доставка</a>
         </li>
         <li class="navigation-element">
@@ -101,7 +101,7 @@
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
             <a class="btn btn-slide" href="#">Подробнее</a>
-            <table class="slide-characteristics">
+            <table class="product-characteristics">
               <tr>
                 <td>8,5 м</td>
                 <td>5 кг</td>
@@ -125,7 +125,7 @@
               Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
             </p>
             <a class="btn btn-slide" href="#">Подробнее</a>
-            <table class="slide-characteristics">
+            <table class="product-characteristics">
               <tr>
                 <td>48 часов</td>
               </tr>
@@ -145,7 +145,7 @@
               Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
             </p>
             <a class="btn btn-slide" href="#">Подробнее</a>
-            <table class="slide-characteristics">
+            <table class="product-characteristics">
               <tr>
                 <td>800 м</td>
                 <td>50 м</td>
@@ -160,26 +160,20 @@
       </ol>
       <ul class="radio-list">
         <li class="slide-radio">
-          <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="slide-1" name="toggle" checked>
         </li>
         <li class="slide-radio">
-          <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="slide-2" name="toggle">
         </li>
         <li class="slide-radio">
-          <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
+          <input class="visually-hidden" type="radio" id="slide-3" name="toggle" >
         </li>
       </ul>
-      <ul class="slider-switches">
-        <li class="radio-switch">
-          <label class="active"></label>
-        </li>
-        <li class="radio-switch">
-          <label></label>
-        </li>
-        <li class="radio-switch">
-          <label></label>
-        </li>
-      </ul>
+      <div class="slider-switches">
+          <label for="slide-1"></label>
+          <label for="slide-2"></label>
+          <label class="active" for="slide-3"></label>
+      </div>
     </section>
     <ul class="catalog-list">
       <li class="catalog-item">
@@ -244,17 +238,11 @@
               <input class="visually-hidden" type="radio" id="services-btn-3" name="toggle">
             </li>
            </ul>
-        <ul class="services-slider-switches">
-          <li>
-            <label>Доставка</label>
-          </li>
-          <li>
-            <label>Гарантия</label>
-          </li>
-          <li>
-            <label>Кредит</label>
-          </li>
-        </ul>
+        <div class="services-slider-switches">
+            <label class="btn services-switch">Доставка</label>
+            <label class="btn services-switch">Гарантия</label>
+            <label class="btn services-switch">Кредит</label>
+        <div>
         <ul class="services-slides-list">
           <li class="services-slide slide-delivery">
             <h3 class="services-slide-title">Доставка</h3>
