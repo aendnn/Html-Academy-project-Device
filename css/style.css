@@ -308,7 +308,27 @@ input[type="radio"].visually-hidden {
 .nav-catalog {
   position: relative;
   padding-right: 30px;
+  padding-bottom: 50px;
   margin-right: 290px;
+}
+
+.catalog-menu {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	height: 0;
+	overflow: hidden;
+}
+
+.catalog-menu a {
+	display: block;
+	width: 120px;
+}
+
+.nav-catalog:hover .catalog-menu {
+  height: auto;
 }
 
 .nav-catalog::after {
@@ -346,36 +366,6 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 */
-/*
-
-.navigation-element {
-	padding-right: 35px;
-}
-
-.navigation-element:first-child {
-	margin-left: aut0;
-}
-
-.navigation-element:nth-child(3) {
-	margin-right: 80px;
-}
-
-.navigation-element:last-child {
-	margin-left: auto;
-
-}
-
-*/
-
-
-.catalog-menu {
-	height: 0;
-	overflow: hidden;
-}
-
-.nav-catalog:hover .catalog-menu {
-  height: auto;
-}
 
 /* стилизация каталога  */
 .page-title {
