@@ -91,7 +91,7 @@
     	<div class="container">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ol class="products-slides-list">
-        <li class="product-slide slide-selfie-stick">
+        <li class="product-slide slide-selfie-stick" id="product1">
           <div class="product-slide-picture">
             <img src="img/slider-picture1.png" width="384" height="486" alt="Селфи-палка">
           </div>
@@ -116,7 +116,7 @@
             </table>
           </div>
         </li>
-        <li class="product-slide slide-fitness-bracelet">
+        <li class="product-slide slide-fitness-bracelet" id="product2">
           <div class="product-slide-picture">
             <img src="img/slider-picture2.png" width="345" height="485" alt="Фитнес-браслет">
           </div>
@@ -136,7 +136,7 @@
             </table>
           </div>
         </li>
-        <li class="product-slide slide-quadcopter">
+        <li class="product-slide slide-quadcopter" id="product3">
           <div class="product-slide-picture">
             <img src="img/slider-picture3.png" width="526" height="334" alt="Квадрокоптер">
           </div>
@@ -171,9 +171,9 @@
         </li>
       </ul>
       <div class="slider-switches">
-          <label for="slide-1"></label>
-          <label for="slide-2"></label>
-          <label class="active" for="slide-3"></label>
+          <label class="slider-switch active" for="slide-1"></label>
+          <label class="slider-switch" for="slide-2"></label>
+          <label class="slider-switch" for="slide-3"></label>
       </div>
     </div>
     </section>
@@ -189,7 +189,7 @@
       </li>
       <li class="catalog-item">
         <a href="#">
-          <div class="picture-item">
+          <div class="picture-item item-bottom">
             <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
           </div>
           <strong class="item-title">Моноподы для селфи</strong>
@@ -295,6 +295,7 @@
           </li>
         </ul>
       </section>
+      <div class="container">
       <section class="company-info">
         <h2 class="visually-hidden">Информация о компании</h2>
         <section class="info-about-us">
@@ -302,11 +303,11 @@
           <p class="info-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p class="info-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul class="transport-companies">
-            <li>Деловые Линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
+            <li class="transport-item">Деловые Линии</li>
+            <li class="transport-item">Автотрейдинг</li>
+            <li class="transport-item">ЖелДорЭкспедиция</li>
           </ul>
-          <a class="btn" href="#">Подробнее о нас</a>
+          <a class="btn btn-company" href="#">Подробнее о нас</a>
         </section>
         <section class="info-contacts">
           <h3 class="info-title">Контакты</h3>
@@ -315,9 +316,10 @@
             <img src="img/map.jpg" width="560" height="222"
              alt="Наш адрес: улица Строителей, 15">
           </a>
-          <a class="btn" href="#">Напишите нам</a>
+          <a class="btn btn-company" href="#">Напишите нам</a>
         </section>
       </section>
+    </div>
     </main>
     <footer class="main-footer">
       <div class="container">
