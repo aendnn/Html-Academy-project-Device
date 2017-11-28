@@ -1334,31 +1334,96 @@ input[type="radio"].visually-hidden {
 	opacity: 0.3;
 }
 
-.modal-feedback {
+.modal {
+	position: fixed;
 	color: #000000;
 	background-color: #ffffff;
+}
+
+.modal-feedback {
+	display: none;
+	top: 150px;
+	left: 50%;
+	width: 760px;
+	margin-left: -480px;
+	padding: 100px;
 	box-shadow: 10px 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
 
-.modal-map img {
-	box-shadow: 10px 10px 20px 0 rgba(4, 6, 6, 0.2);
+.modal-close {
+	position: absolute;
+	top: 22px;
+	right: 22px;
+	width: 55px;
+	height: 55px;
+	font-size: 0;
+	background-color: rgba(240, 197, 46, 0.5);
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+	content: "";
+	position: absolute;
+	top: 24px;
+	left: 12px;
+	width: 30px;
+	height: 3px;
+	background-color: #ffffff;
+}
+
+.modal-close::before {
+	transform: rotate(-45deg)
+}
+
+.modal-close::after {
+	transform: rotate(45deg);
+}
+
+.form-feedback {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.feedback-item {
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.feedback-item:last-child {
+	margin: 0;
+	margin-bottom: 60px;
 }
 
 .modal-feedback label {
+	margin-bottom: 10px;
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: 900;
 }
 
-.modal-feedback input,
+.modal-feedback input[type="text"],
 .modal-feedback textarea {
+	box-sizing: border-box;
+	padding: 17px 19px;
 	font-family: "open_sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
 	background-color: #f2f2f2;
 	border: 2px solid #f2f2f2;
+}
+
+.modal-feedback input[type="text"] {
+	width: 360px;
+}
+
+.modal-feedback textarea {
+	width: 760px;
 }
 
 .feedback-item input:-ms-input-placeholder {
@@ -1385,7 +1450,6 @@ input[type="radio"].visually-hidden {
 	color: rgba(70, 70, 70, 0.4);
 }
 
-
 .modal-feedback input:hover,
 .modal-feedback textarea:hover {
 	background-color: #eaeaea;
@@ -1402,3 +1466,16 @@ input[type="radio"].visually-hidden {
 .modal-feedback textarea:invalid {
 	background-color: #f6dada;
 }
+
+.modal-map {
+	left: 50%;
+	bottom: 380px;
+	width: 960px;
+	height: 559px;
+	margin-left: -480px;
+}
+
+.modal-map img {
+	box-shadow: 10px 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
