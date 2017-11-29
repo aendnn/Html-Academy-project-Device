@@ -318,13 +318,29 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	left: 0;
 	top: 50px;
+	width: 550px;
 	height: 0;
 	overflow: hidden;
 }
 
-.catalog-menu a {
-	display: block;
-	width: 120px;
+.catalog-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.video-photo-tools {
+	width: 185px;
+}
+
+.hand-accessories {
+	width: 125px;
+	margin-left: 55px;
+}
+
+.quadcopters {
+	width: 113px;
+	margin-left: auto;
 }
 
 .nav-catalog:hover .catalog-menu {
