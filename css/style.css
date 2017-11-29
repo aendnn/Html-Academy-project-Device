@@ -1338,14 +1338,16 @@ input[type="radio"].visually-hidden {
 	position: fixed;
 	color: #000000;
 	background-color: #ffffff;
+	z-index: 20;
 }
 
 .modal-feedback {
-	display: none;
-	top: 150px;
+	top: 50%;
 	left: 50%;
+	display: none;
 	width: 760px;
 	margin-left: -480px;
+	margin-top: -230px;
 	padding: 100px;
 	box-shadow: 10px 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
@@ -1469,10 +1471,16 @@ input[type="radio"].visually-hidden {
 
 .modal-map {
 	left: 50%;
-	bottom: 380px;
+	top: 680px;
+	display: none;
 	width: 960px;
 	height: 559px;
 	margin-left: -480px;
+	margin-top: -640px;
+}
+
+.modal-map p {
+	margin: 0;
 }
 
 .modal-map img {
