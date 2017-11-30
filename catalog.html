@@ -56,25 +56,37 @@
             <li class="nav-catalog">
               <span class="navigation-element drop-element">Каталог товаров</span>
               <ul class="catalog-menu">
-                <li>
-                  <a class="catalog-element" href="#">Виртуальная реальность</a>
-                </li>
-                <li>
-                  <a class="catalog-element" href="#">Моноподы для селфи</a>
-                </li>
-                <li>
-                  <a class="catalog-element" href="#">Экшн-камеры</a>
-                </li>
-                <li>
-                  <a class="catalog-element" href="#">Фитнес-браслеты</a>
-                </li>
-                <li>
-                  <a class="catalog-element" href="#">Умные часы</a>
-                </li>
-                <li>
-                  <a class="catalog-element" href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
+            	<li>
+            		<ul class="video-photo-tools">
+		              <li>
+		                <a class="catalog-element" href="#">Виртуальная реальность</a>
+		              </li>
+		              <li>
+		                <a class="catalog-element" href="catalog.html">Моноподы для селфи</a>
+		              </li>
+		              <li>
+		                <a class="catalog-element" href="#">Экшн-камеры</a>
+		              </li>
+		            </ul>
+		          </li>
+		          <li>
+		          	<ul class="hand-accessories">  
+		              <li>
+		                <a class="catalog-element" href="#">Фитнес-браслеты</a>
+		              </li>
+		              <li>
+		                <a class="catalog-element" href="#">Умные часы</a>
+		              </li>
+		            </ul>
+		          </li>
+		          <li>
+		          	<ul class="quadcopters">
+		              <li>
+		                <a class="catalog-element" href="#">Квадрокоптеры</a>
+		              </li>
+	            </ul>
+	          </li>
+          </ul>
             </li>
           <li class="navigation-element">
             <a href="#">Доставка</a>
@@ -105,10 +117,10 @@
       </ul>
     </div>
     <div class="catalog-columns">
-    	<div class="container">
-    <section class="filter-products">
+    		<section class="filter-products">
       <h2 class="section-title filter-products-title">Фильтр:</h2>
-      <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
+      <div class="container">
+      	<form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="filter-price">
       <legend class="filter-title">Стоимость</legend>
         <div class="filter-range" tabindex="0">
@@ -163,10 +175,12 @@
     </fieldset>
   <button class="btn btn-form">Показать</button>
   </form>
+</div>
 </section>
 <section class="catalog-products">
   <h3 class="visually-hidden">Список моноподов для селфи</h3>
   <section class="sort-catalog">
+  	<div class="container">
   <h2 class="section-title sort-catalog-title">Сортировка:</h2>
     <ul class="sort-list">
       <li class="sort-item sort-current">По цене</li>
@@ -183,6 +197,7 @@
         </a>
       </li>
     </ul>
+  </div>
   </section>
     <ul class="products-list">
       <li>
@@ -256,7 +271,6 @@
       </li>
     </ul>
     </section>
-  </div>
 </div>
   </main>
   <footer class="main-footer">
