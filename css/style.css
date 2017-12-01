@@ -408,6 +408,7 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs {
 	display: flex;
+  flex-wrap: wrap;
 	width: 440px;
 	margin: 0;
 	margin-bottom: 40px;
@@ -592,17 +593,66 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-item label {
+  position: relative;
+  display: block;
   padding-left: 40px;
 	font-family: "open_sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 40px;
 	font-weight: 300;
 	color: rgba(0, 0, 0);
+  cursor: pointer;
+  user-select: none;
+}
+
+.input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img./checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
 }
 
 .filter-input:disabled + label,
 .filter-input:disabled + label {
 	color: #a6a6a6;
+}
+
+.input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 5px solid #000000;
+  border-radius: 50%;
+}
+
+.input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 11px;
+  height: 11px;
+  background-color: #000000;
+  border-radius: 50%;
 }
 
 .btn-form {
