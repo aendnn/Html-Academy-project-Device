@@ -366,14 +366,13 @@ input[type="radio"].visually-hidden {
 
 .catalog-menu {
 	display: flex;
-	justify-content: space-between;
 	position: absolute;
 	left: 0;
 	top: 50px;
-	width: 550px;
+  z-index: 100;
+  width: 1040px;
 	height: 0;
 	overflow: hidden;
-	z-index: 5;
 }
 
 .nav-catalog:hover .catalog-menu {
@@ -381,24 +380,28 @@ input[type="radio"].visually-hidden {
   padding-bottom: 100px;
 }
 
-.catalog-menu ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
 .video-photo-tools {
 	flex-basis: 185px;
+  margin: 0;
+  margin-right: 60px;
+  padding: 0;
+  list-style: none;
 }
+
 
 .hand-accessories {
 	flex-basis: 125px;
-	margin-left: 55px;
+  margin: 0;
+  margin-right: 75px;
+  padding: 0;
+  list-style: none;
 }
 
 .quadcopters {
 	flex-basis: 113px;
-	margin-left: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .navigation-element:nth-child(2) {
