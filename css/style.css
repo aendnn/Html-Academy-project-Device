@@ -339,7 +339,7 @@ input[type="radio"].visually-hidden {
   margin-right: 300px;
 }
 
-.nav-catalog::after {
+.nav-catalog::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -351,6 +351,17 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
   opacity: 0.3;
   cursor: pointer;
+}
+
+.nav-catalog::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  right: -400px;
+  width: 100px;
+  height: 7px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
 }
 
 .catalog-menu {
@@ -398,19 +409,6 @@ input[type="radio"].visually-hidden {
 	margin-left: 113px;
 }
 
-
-/* белая полоса
-
-.element-delivery::before {
-  content: "";
-  position: absolute;
-  top: 110px;
-  left: 0px;
-  width: 100px;
-  height: 7px;
-  background-color: #ffffff;
-}
-*/
 
 /* стилизация каталога  */
 .page-title {
@@ -960,11 +958,51 @@ input[type="radio"].visually-hidden {
 }
 
 .products-slides-list {
+  position: relative;
+  counter-reset: slides;
   display: flex;
   margin: 0;
   margin-left: 40px;
 	margin-right: 40px;
   padding: 0;
+  list-style: none;
+}
+
+
+.first-slide::before {
+  content: "01";
+  position: absolute;
+  top: -125px;
+  right: 30px;
+  font-family: "gilroy", "Arial", sans-serif;
+  font-size: 179px;
+  line-height: 179px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.second-slide::before {
+  content: "02";
+  position: absolute;
+  top: -125px;
+  right: 30px;
+  font-family: "gilroy", "Arial", sans-serif;
+  font-size: 179px;
+  line-height: 179px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.third-slide::before {
+  content: "03";
+  position: absolute;
+  top: -125px;
+  right: 30px;
+  font-family: "gilroy", "Arial", sans-serif;
+  font-size: 179px;
+  line-height: 179px;
+  font-weight: 900;
+  color: #ffffff;
 }
 
 .product-slide {
@@ -1083,7 +1121,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 57px;
 }
 
-.btn-to-basket {
+.catalog-page .btn-to-basket {
 	background-image: none;
 	background-image: linear-gradient(to top, transparent, transparent 35%, #f0c52e 35%, #f0c52e 70%, transparent 70%, transparent);
 }
@@ -1091,7 +1129,7 @@ input[type="radio"].visually-hidden {
 .slider-switches {
 	position: absolute;
 	bottom: 250px;
-	right: 185px;
+	right: 105px;
 	z-index: 20;
   text-align: center;
 	font-size: 0;
@@ -1203,13 +1241,14 @@ input[type="radio"].visually-hidden {
 
 .our-services-slider .container {
 	display: flex;
-	padding-bottom: 150px;
+	padding-bottom: 130px;
 	margin-bottom: 95px;
 }
 
 .services-slider-switches {
   position: relative;
   top: -10px;
+  left: -20px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -1233,7 +1272,7 @@ input[type="radio"].visually-hidden {
 .services-slider-switches::after {
 	content: "";
 	position: absolute;
-	top: -80px;
+	top: -90px;
 	right: 0;
 	width: 7px;
 	height: 319px;
@@ -1254,7 +1293,7 @@ input[type="radio"].visually-hidden {
 	flex-direction: column;
 	align-content: flex-end;
 	width: 460px;
-	margin-left: 120px;
+	margin-left: 96px;
 	padding-right: 300px;
 	display: none;
 }
@@ -1268,7 +1307,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 	position: absolute;
 	top: -15px;
-	right: 50px;
+	right: 70px;
 	width: 136px;
 	height: 164px;
 	background-image: url("../img/delivery.svg");
@@ -1323,16 +1362,31 @@ input[type="radio"].visually-hidden {
 
 .brands-list {
 	display: flex;
-	justify-content: space-between;
 	margin: 0;
-	margin-bottom: 55px;
+  margin-left: auto;
 	padding: 0;
-	padding-bottom: 105px;
+	padding-bottom: 90px;
 	list-style: none;
 }
 
 .brand-link a:hover img{
-	opacity: 0;
+  opacity: 0;
+}
+
+.link-dji {
+  margin-left: 30px;
+}
+
+.link-gadgets {
+  margin-right: 60px;
+}
+
+.link-gopro {
+  margin-right: 100px;
+}
+
+.link-vive {
+  margin-right: 70px;
 }
 
 .link-dji:hover{
@@ -1358,6 +1412,7 @@ input[type="radio"].visually-hidden {
 .company-info .container {
 	display: flex;
 	justify-content: space-between;
+  padding-top: 45px;
 }
 
 .info-about-us {
@@ -1369,15 +1424,27 @@ input[type="radio"].visually-hidden {
 }
 
 .info-title {
+  position: relative;
+  left: -20px;
 	margin: 0;
 	margin-bottom: 45px;
+}
+
+.info-title::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 80px;
+  height: 7px;
+  background-color: #000000;
+  background-repeat: no-repeat;
 }
 
 .info-text {
 	margin: 0;
 	margin-bottom: 35px;
 }
-
 
 .transport-companies {
 	margin: 0;
