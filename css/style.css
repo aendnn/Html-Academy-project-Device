@@ -1,11 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
 }
 
 @font-face {
@@ -288,11 +288,11 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation .user-login {
-  margin-right: 196px;
+  margin-right: 198px;
 }
 
 .user-basket {
-  margin-left: 21px;
+	margin-left: 21px;
 }
 
 .catalog-page .user-login {
@@ -356,7 +356,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   bottom: -60px;
-  right: -387px;
+  right: -390px;
   z-index: 1;
   width: 100px;
   height: 7px;
@@ -409,7 +409,7 @@ input[type="radio"].visually-hidden {
 }
 
 .navigation-element:nth-child(3) {
-	margin-right: 105px;
+	margin-right: 108px;
 }
 
 
@@ -960,8 +960,8 @@ input[type="radio"].visually-hidden {
 }
 
 .product-slide-picture {
+	position: relative;
   display: flex;
-  position: relative;
   width: 400px;
   margin-left: 100px;
 }
@@ -972,7 +972,7 @@ input[type="radio"].visually-hidden {
 
 .slide-selfie-stick img {
   top: -110px;
-  left: -31px;
+  left: -30px;
 }
 
 .slide-fintess-bracelet img {
@@ -1001,8 +1001,8 @@ input[type="radio"].visually-hidden {
 .first-slide::before {
   content: "01";
   position: absolute;
-  top: -125px;
-  right: 30px;
+ 	top: -124px;
+  right: 28px;
   font-family: "gilroy", "Arial", sans-serif;
   font-size: 179px;
   line-height: 179px;
@@ -1013,8 +1013,8 @@ input[type="radio"].visually-hidden {
 .second-slide::before {
   content: "02";
   position: absolute;
-  top: -125px;
-  right: 70px;
+  top: -124px;
+  right: 28px;
   font-family: "gilroy", "Arial", sans-serif;
   font-size: 179px;
   line-height: 179px;
@@ -1025,8 +1025,8 @@ input[type="radio"].visually-hidden {
 .third-slide::before {
   content: "03";
   position: absolute;
-  top: -123px;
-  right: 28px;
+  top: -125px;
+  right: 30px;
   font-family: "gilroy", "Arial", sans-serif;
   font-size: 179px;
   line-height: 179px;
@@ -1045,7 +1045,7 @@ input[type="radio"].visually-hidden {
 .slider-switches {
   position: absolute;
   top: 218px;
-  right: 115px;
+  right: 156px;
   z-index: 20;
   text-align: center;
   font-size: 0;
@@ -1063,7 +1063,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.product-slide:not(:first-child) {
+.product-slide:not(:nth-child(3)) {
   display: none;
 }
 
@@ -1110,9 +1110,10 @@ input[type="radio"].visually-hidden {
 }
 */
 .product-slide-title {
-  position: relative;
-  top: -32px;
+  position: absolute;
+  top: -30px;
   left: 0;
+  display: block;
   width: 500px;
   font-family: "gilroy", "Arial", sans-serif;
   font-size: 47px;
@@ -1125,8 +1126,13 @@ input[type="radio"].visually-hidden {
 .product-slide-description p {
   width: 460px;
   margin: 0;
-  margin-top: -10px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 52px;
+  letter-spacing: 0.1px;
+}
+
+.slide-quadcopter .product-slide-description {
+	margin-left: 80px;
 }
 
 .product-characteristics {
@@ -1135,6 +1141,7 @@ input[type="radio"].visually-hidden {
 
 .product-characteristics td {
 	width: 160px;
+	padding: 0;
   padding-bottom: 5px;
   font-family: "gilroy", "Arial", sans-serif;
   font-size: 36px;
@@ -1143,12 +1150,20 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.slide-quadcopter .product-characteristics {
+  width: 320px;
+}
+
 .slide-selfie-stick td:nth-child(2) {
   width: 140px;
 }
 
+.slide-quadcopter td {
+	width: 120px;
+}
 
 .product-characteristics th {
+	padding: 0;
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;
@@ -1158,6 +1173,10 @@ input[type="radio"].visually-hidden {
 
 .slide-selfie-stick p {
   width: 480px;
+}
+
+.slide-fitness-bracelet p {
+	width: 455px;
 }
 
 .slide-fitness-bracelet .product-slide-title {
@@ -1170,11 +1189,8 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-quadcopter .product-slide-title {
+	width: 600px;
   top: -30px;
-}
-
-.slide-quadcopter .product-characteristics {
-  width: 300px;
 }
 
 .slide-fitness-bracelet .product-characteristics {
@@ -1199,6 +1215,7 @@ input[type="radio"].visually-hidden {
 
 .btn-slide {
   margin-bottom: 57px;
+  padding-left: 5px;
   letter-spacing: 3.5px;
 }
 
@@ -1260,7 +1277,7 @@ input[type="radio"].visually-hidden {
 	align-items: center;
 	width: 160px;
 	min-height: 160px;
-	margin-bottom: 35px;
+	margin-bottom: 38px;
 	background-color: #f7e296;
 }
 
@@ -1275,10 +1292,10 @@ input[type="radio"].visually-hidden {
 .item-title {
   display: block;
   margin: 0;
-  margin-right: auto;
   font-size: 18px;
   line-height: 21px;
   font-weight: 900;
+  letter-spacing: 0.2px;
 }
 
 .catalog-item:active img,
@@ -1359,10 +1376,10 @@ input[type="radio"].visually-hidden {
 .services-slides-list {
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
+  margin-left: 95px;
 }
 
-.services-slide:not(:first-child) {
+.services-slide:not(:nth-child(3)) {
   display: none;
 }
 
@@ -1378,7 +1395,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 	position: absolute;
 	top: -15px;
-	right: -230px;
+	right: -235px;
 	width: 136px;
 	height: 164px;
 	background-image: url("../img/delivery.svg");
@@ -1388,8 +1405,8 @@ input[type="radio"].visually-hidden {
 .slide-guarantee::after {
 	content: "";
 	position: absolute;
-	top: -35px;
-	right: 0;
+	top: -38px;
+  right: -255px;
 	width: 171px;
 	height: 195px;
 	background-image: url("../img/warranty.svg");
@@ -1397,14 +1414,14 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-credit .services-slide-description {
-	width: 425px;
+	width: 435px;
 }
 
 .slide-credit::after {
 	content: "";
 	position: absolute;
-	top: -30px;
-	right: 30px;
+	top: -38px;
+  right: -231px;
 	width: 156px;
 	height: 188px;
 	background-image: url("../img/credit.svg");
@@ -1412,10 +1429,16 @@ input[type="radio"].visually-hidden {
 }
 
 .services-slide-title {
-	position: relative;
-	top: -28px;
+	position: absolute;
+  top: -34px;
+  left: 2px;
+  letter-spacing: 1px;
 }
 
+
+.slide-credit .services-slide-title {
+	top: -33px;
+}
 
 .services-slide-title,
 .info-title {
@@ -1429,7 +1452,12 @@ input[type="radio"].visually-hidden {
 
 .services-slide-description {
 	margin: 0;
-  margin-top: -10px;
+	margin-top: 52px;
+	letter-spacing: 0.3px;
+}
+
+.slide-credit .services-slide-description {
+	margin-bottom: 55px;
 }
 
 .brands {
@@ -1726,26 +1754,27 @@ input[type="radio"].visually-hidden {
 }
 
 .for-user-wrapper {
-	flex-basis: 360px;
+	flex-basis: 325px;
+	margin-left: 35px;
 }
 
 .footer-user-navigation {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 360px;
+	width: 325px;
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 33px;
 	padding: 0;
 	list-style: none;
 }
 
-.footer-user-navigation li {
-  margin-left: 44px;
+.footer-user-sign-in {
+	margin-right: auto;
 }
 
-.footer-user svg {
-  margin-right: 3px;
+.footer-user-compare {
+	margin-left: auto;
 }
 
 .footer-user {
@@ -1761,6 +1790,18 @@ input[type="radio"].visually-hidden {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-user-sign-in svg {
+  margin-right: 13px;
+}
+
+.footer-user-compare svg {
+	margin-right: 10px;
+}
+
+.footer-user-basket svg {
+	margin-right: 6px;
+}
+
 .footer-phone {
 	width: 165px;
 	margin: 0;
@@ -1770,7 +1811,7 @@ input[type="radio"].visually-hidden {
 .logo-academy-wrapper {
 	width: 28px;
 	height: 36px;
-	margin-top: 65px;
+	margin-top: 60px;
 	margin-left: auto;
 }
 
