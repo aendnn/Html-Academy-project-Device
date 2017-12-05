@@ -864,7 +864,7 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   justify-content: space-between;
   margin: 0;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 .item-title a {
@@ -992,7 +992,7 @@ input[type="radio"].visually-hidden {
 .popular-products-slider {
   z-index: 5;
   position: relative;
-	padding-bottom: 110px;
+	padding-bottom: 115px;
 	color: #464646;
 	background-color: #ffffff;
 }
@@ -1017,6 +1017,11 @@ input[type="radio"].visually-hidden {
   margin-left: 100px;
 }
 
+.slide-quadcopter .product-slide-picture {
+	width: 560px;
+	margin: 0;
+}
+
 .product-slide-picture img {
   position: absolute;
 }
@@ -1026,16 +1031,16 @@ input[type="radio"].visually-hidden {
   left: -30px;
 }
 
-.slide-fintess-bracelet img {
-  top: -100px;
-  left: -5px;
+.slide-fitness-bracelet img {
+  top: -98px;
+  left: -3px;
   width: 345px;
   height: 485px;
 }
 
 .slide-quadcopter img {
 	top: -45px;
-  left: -80px;
+  left: 12px;
   width: 526px;
   height: 334px;
 }
@@ -1114,7 +1119,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.product-slide:not(:nth-child(3)) {
+.product-slide:not(:nth-child(2)) {
   display: none;
 }
 
@@ -1182,16 +1187,8 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.1px;
 }
 
-.slide-quadcopter .product-slide-description {
-	margin-left: 80px;
-}
-
-.product-characteristics {
-  width: 460px;
-}
-
 .product-characteristics td {
-	width: 160px;
+	width: 155px;
 	padding: 0;
   padding-bottom: 5px;
   font-family: "gilroy", "Arial", sans-serif;
@@ -1199,6 +1196,10 @@ input[type="radio"].visually-hidden {
   line-height: 46px;
   font-weight: 300;
   color: #000000;
+}
+
+.slide-fitness-bracelet .product-characteristics {
+	width: 160px;
 }
 
 .slide-quadcopter .product-characteristics {
@@ -1228,11 +1229,6 @@ input[type="radio"].visually-hidden {
 
 .slide-fitness-bracelet p {
 	width: 455px;
-}
-
-.slide-fitness-bracelet .product-slide-title {
-  top: -100px;
-  left: -4px;
 }
 
 .slide-fitness-bracelet .product-slide-title {
@@ -1331,7 +1327,7 @@ input[type="radio"].visually-hidden {
 	align-items: center;
 	width: 160px;
 	min-height: 160px;
-	margin-bottom: 38px;
+	margin-bottom: 32px;
 	background-color: #f7e296;
 }
 
@@ -1413,7 +1409,7 @@ input[type="radio"].visually-hidden {
 .services-slider-switches .active {
   width: 280px;
   margin: 0;
-  padding: 8px 10px;
+  padding: 9px 10px;
   padding-left: 20px;
   text-align: left;
   color: #f7e184;
@@ -1433,7 +1429,7 @@ input[type="radio"].visually-hidden {
   margin-left: 95px;
 }
 
-.services-slide:not(:nth-child(3)) {
+.services-slide:not(:nth-child(2)) {
   display: none;
 }
 
@@ -1623,7 +1619,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 40px;
   font-weight: 900;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
   color: #000000;
 }
 
@@ -1660,7 +1656,8 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
 	margin-top: 90px;
-	padding: 60px 0;
+	padding-top: 60px;
+	padding-bottom: 80px;
 	color: #ffffff;
 	background-color: #464646;
 }
@@ -1679,7 +1676,7 @@ input[type="radio"].visually-hidden {
 .address-footer-wrapper::after {
   content: "";
   position: absolute;
-  bottom: 15px;
+  bottom: 11px;
   left: 2px;
   width: 80px;
   height: 7px;
@@ -1702,7 +1699,7 @@ input[type="radio"].visually-hidden {
 
 .footer-address {
 	margin: 0;
-	margin-top: 20px;
+	margin-top: 25px;
 }
 
 .footer-navigation-wrapper {
@@ -1780,21 +1777,21 @@ input[type="radio"].visually-hidden {
 
 .social-btn-fb::before {
   top: -3px;
-  left: 5px;
+  left: 7px;
   background-image: url("../img/fb.svg");
   background-repeat: no-repeat;
 }
 
 .social-btn-inst::before {
   top: -3px;
-  left: 37px;
+  left: 39px;
   background-image: url("../img/instagram.svg");
   background-repeat: no-repeat;
 }
 
 .social-btn-twi::before {
   top: -3px;
-  left: 68px;
+  left: 70px;
   background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
 }
@@ -1809,7 +1806,7 @@ input[type="radio"].visually-hidden {
 
 .for-user-wrapper {
 	flex-basis: 325px;
-	margin-left: 35px;
+	margin-left: 30px;
 }
 
 .footer-user-navigation {
