@@ -151,7 +151,7 @@ input[type="radio"].visually-hidden {
 .header-search::before {
   content: "";
   position: absolute;
-  top: 12px;
+  top: 14px;
   left: 5px;
   width: 16px;
   height: 16px;
@@ -1273,7 +1273,7 @@ input[type="radio"].visually-hidden {
 
 .btn-form {
 	width: 200px;
-  margin-top: 15px;
+  margin-top: 20px;
   letter-spacing: 3.6px;
 	background-image: none;
 	background-image: linear-gradient(to top, #efefef, #efefef 35%, #f0c52e 35%, #f0c52e 70%, #efefef 70%, #efefef);
