@@ -106,15 +106,19 @@
         <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
         <input class="visually-hidden" type="radio" id="product-2" name="toggle">
         <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-
       <div class="slider-switches">
-          <label class="slider-switch" for="product-1">Первый слайд</label>
-          <label class="slider-switch" for="product-2">Второй Слайд</label>
-          <label class="slider-switch" for="product-3">Третий слайд</label>
+          <label class="slider-switch" for="product-1">
+						<span class="visually-hidden">Первый слайд</span>
+					</label>
+          <label class="slider-switch" for="product-2">
+          	<span class="visually-hidden">Второй Слайд</span>
+          </label>
+          <label class="slider-switch" for="product-3">
+          	<span class="visually-hidden">Третий слайд</span>
+          </label>
       </div>
       <ol class="products-slides-list">
         <li class="product-slide slide-selfie-stick" id="slide-1">
-          <span class="first-slide"></span>
           <div class="product-slide-picture">
             <img src="img/slider-picture1.png" width="384" height="485" alt="Селфи-палка">
           </div>
@@ -140,7 +144,6 @@
           </div>
         </li>
         <li class="product-slide slide-fitness-bracelet" id="slide-2">
-          <span class="second-slide"></span>
           <div class="product-slide-picture">
             <img src="img/slider-picture2.png" width="345" height="485" alt="Фитнес-браслет">
           </div>
@@ -161,7 +164,6 @@
           </div>
         </li>
         <li class="product-slide slide-quadcopter" id="slide-3">
-          <span class="third-slide"></span>
           <div class="product-slide-picture">
             <img src="img/slider-picture3.png" width="526" height="334" alt="Квадрокоптер">
           </div>
@@ -243,29 +245,27 @@
       <section class="our-services-slider">
       	<div class="container">
         <h2 class="visually-hidden">Наши услуги</h2>
-        <div class="services-radio-list">
-          <input class="visually-hidden" type="radio" id="services-btn-1" name="toggle" checked>
-          <input class="visually-hidden" type="radio" id="services-btn-2" name="toggle">
-          <input class="visually-hidden" type="radio" id="services-btn-3" name="toggle">
-        </div>
+          <input class="visually-hidden" type="radio" id="services-btn-1" name="services-toggle" checked>
+          <input class="visually-hidden" type="radio" id="services-btn-2" name="services-toggle">
+          <input class="visually-hidden" type="radio" id="services-btn-3" name="services-toggle">
         <div class="services-slider-switches">
-            <label class="btn services-switch active" for="services-btn-1">Доставка</label>
+            <label class="btn services-switch" for="services-btn-1">Доставка</label>
             <label class="btn services-switch" for="services-btn-2">Гарантия</label>
             <label class="btn services-switch" for="services-btn-3">Кредит</label>
         </div>
         <ul class="services-slides-list">
-          <li class="services-slide slide-delivery">
+          <li class="services-slide #slide-delivery">
             <h3 class="services-slide-title">Доставка</h3>
             <p class="services-slide-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на ваш этаж.</p>
           </li>
-          <li class="services-slide slide-guarantee">
+          <li class="services-slide #slide-guarantee">
             <h3 class="services-slide-title">Гарантия</h3>
             <p class="services-slide-description">
             Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
             Товар, не дом, конечно же.
           </p>
         </li>
-        <li class="services-slide slide-credit">
+        <li class="services-slide #slide-credit">
           <h3 class="services-slide-title">Кредит</h3>
           <p class="services-slide-description">
             Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
