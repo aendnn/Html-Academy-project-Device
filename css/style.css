@@ -1900,6 +1900,10 @@ input[type="radio"].visually-hidden {
 	z-index: 200;
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-feedback {
 	top: 50%;
 	left: 50%;
