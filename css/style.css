@@ -92,6 +92,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
+	position: relative;
+	z-index: 10;
   margin-top: 40px;
 	font-size: 15px;
 	line-height: 36px;
@@ -312,6 +314,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation {
+	z-index: 100;
 	display: flex;
 	margin-left: 40px;
   padding-bottom: 125px;
@@ -343,6 +346,7 @@ input[type="radio"].visually-hidden {
 
 .nav-catalog {
   position: relative;
+  z-index: 5;
   padding-right: 35px;
   padding-bottom: 30px;
   margin-right: 290px;
@@ -360,18 +364,6 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
   opacity: 0.3;
   cursor: pointer;
-}
-
-.nav-catalog::after {
-  content: "";
-  position: absolute;
-  bottom: -60px;
-  right: -390px;
-  z-index: 1;
-  width: 100px;
-  height: 7px;
-  background-color: #ffffff;
-  background-repeat: no-repeat;
 }
 
 .catalog-menu {
@@ -1054,6 +1046,18 @@ input[type="radio"].visually-hidden {
   margin-right: 40px;
 }
 
+.product-slide-description::after {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: 0;
+  z-index: 1;
+  width: 100px;
+  height: 7px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+
 .first-slide::before {
   content: "01";
   position: absolute;
@@ -1089,6 +1093,8 @@ input[type="radio"].visually-hidden {
   font-weight: 900;
   color: #ffffff;
 }
+
+
 
 
 .radio-list,
