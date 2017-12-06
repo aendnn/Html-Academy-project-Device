@@ -1006,6 +1006,8 @@ input[type="radio"].visually-hidden {
   width: 100%;
   min-height: 500px;
   opacity: 0;
+	transition-duration: 0.5s;
+	transition-property: opacity;
 }
 
 .product-slide::after {
@@ -1356,7 +1358,7 @@ input[type="radio"].visually-hidden {
 
 .services-slider-switches {
   position: relative;
-  top: 0px;
+  top: -20px;
   left: 0px;
   z-index: 1;
   display: flex;
@@ -1368,82 +1370,89 @@ input[type="radio"].visually-hidden {
 .services-switch {
 	position: relative;
 	width: 160px;
-  margin-bottom: 40px;
+  margin: 30px 0;
   padding-left: 7px;
 	letter-spacing: 4px;
 	background-image: none;
 	background-image: linear-gradient(to top, transparent, transparent 35%, #f0c52e 35%, #f0c52e 70%, transparent 70%, transparent);
 }
 
-.services-switch::after {
-	content: "";
-	position: absolute;
-	width: 280px;
-  margin: 0;
-  padding: 10px;
-  padding-left: 20px;
-  text-align: left;
-  color: #f7e184;
-  background-image: none;
-  background-color: transparent;
-}
-
 .services-slider-switches::after {
 	content: "";
 	position: absolute;
-	top: -80px;
+	top: -60px;
 	right: 0;
 	width: 7px;
 	height: 319px;
 	background-color: #000000;
 }
 
-.services-btn-1:checked + label,
-.services-slider-switches .active + label {
-  margin-top: 35px;
-}
-
 .services-slides-list {
 	position: relative;
   display: flex;
   flex-direction: column;
-  margin-left: 95px;
 }
 
 .services-slide {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 120px;
 	display: flex;
 	flex-direction: column;
 	align-content: flex-end;
-	width: 100%;
+	width: 760px;
 	opacity: 0;
 }
 
-#services-btn-1:checked ~ .services-slides-list #slide-delivery {
+#services-1:checked ~ .services-slides-list #delivery {
 	opacity: 1;
 }
 
-#services-btn-2:checked ~ .services-slides-list #slide-guarantee {
+#services-2:checked ~ .services-slides-list #guarantee {
 	opacity: 1;
 }
 
-#services-btn-3:checked ~ .services-slides-list #slide-credit {
+#services-3:checked ~ .services-slides-list #credit {
 	opacity: 1;
 }
 
-#services-btn-1:checked ~ .services-slider-switches .services-switch:nth-child(1)::after {
+#services-1:checked ~ .services-slider-switches .services-switch:nth-child(1) {
+	width: 280px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 8px 10px;
+  padding-left: 20px;
+  text-align: left;
+  color: #f7e184;
+  background-image: none;
 	background-color: #000000;
 }
 
-#services-btn-2:checked ~ .services-slider-switches .services-switch:nth-child(2)::after {
+#services-2:checked ~ .services-slider-switches .services-switch:nth-child(2) {
+	width: 280px;
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  padding: 8px 10px;
+  padding-left: 20px;
+  text-align: left;
+  color: #f7e184;
+  background-image: none;
 	background-color: #000000;
 }
 
-#services-btn-3:checked ~ .services-slider-switches .services-switch:nth-child(3)::after {
+#services-3:checked ~ .services-slider-switches .services-switch:nth-child(3) {
+	width: 280px;
+  margin: 0;
+  margin-top: 35px;
+  padding: 8px 10px;
+  padding-left: 20px;
+  text-align: left;
+  color: #f7e184;
+  background-image: none;
 	background-color: #000000;
 }
+
 
 
 .slide-delivery::after {
