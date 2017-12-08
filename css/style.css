@@ -314,7 +314,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-basket {
-	margin-left: 20px;
+	margin-left: 18px;
 }
 
 .catalog-page .user-login {
@@ -521,7 +521,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-columns {
-	margin-bottom: 10px;
+	margin-bottom: 9px;
   overflow-x: hidden;
   background-image: linear-gradient(to right, #efefef 50%, #ebebeb 50%, #ffffff 50%, #ffffff);
 }
@@ -918,11 +918,6 @@ input[type="radio"].visually-hidden {
   margin-right: 0px;
 }
 
-.products-list li:nth-of-type(3),
-.products-list li:nth-of-type(4) {
-	margin-bottom: 0;
-}
-
 .item-description {
   display: flex;
   flex-direction: row;
@@ -1019,7 +1014,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 760px;
 	margin: 0;
-	margin-top: 40px;
 	margin-right: 0;
 	margin-bottom: 67px;
   margin-left: 73px;
