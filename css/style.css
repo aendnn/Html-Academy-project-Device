@@ -1311,6 +1311,7 @@ input[type="radio"].visually-hidden {
 .btn {
 	display: block;
 	width: 220px;
+	padding-left: 10px;
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 23px;
@@ -1327,7 +1328,6 @@ input[type="radio"].visually-hidden {
 .btn-slide {
   z-index: 2;
   margin-bottom: 57px;  
-  padding-left: 9px;
   letter-spacing: 3.5px;
 }
 
@@ -2089,14 +2089,14 @@ input[type="radio"].visually-hidden {
 	width: 960px;
 	margin-left: -480px;
 	margin-top: -260px;
-	padding: 95px 100px;
+	padding: 94px 100px;
 	box-shadow: 0 20px 40px rgba(4, 6, 6, 0.75);
 }
 
 .modal-close {
 	position: absolute;
-	top: 22px;
-	right: 22px;
+	top: 19px;
+  right: 21px;
 	width: 55px;
 	height: 55px;
 	font-size: 0;
@@ -2110,7 +2110,7 @@ input[type="radio"].visually-hidden {
 .modal-close::after {
 	content: "";
 	position: absolute;
-	top: 24px;
+	top: 26px;
 	left: 12px;
 	width: 30px;
 	height: 3px;
@@ -2149,20 +2149,21 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
 	margin: 0;
-	margin-bottom: 40px;
+	margin-bottom: 37px;
 }
 
 .feedback-item:last-of-type {
 	margin: 0;
-	margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
 .modal-feedback label {
-	margin-bottom: 5px;
+	margin-bottom: 9px;
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: 900;
+	letter-spacing: 0.3px;
 }
 
 .modal-feedback input[type="text"],
