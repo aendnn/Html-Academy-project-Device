@@ -981,6 +981,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	top: 180px;
 	left: 80px;
+	z-index: 1;
 	height: 0;
 	overflow: hidden;
 	text-align: center;
@@ -1303,8 +1304,10 @@ input[type="radio"].visually-hidden {
 }
 
 .btn {
+	position: relative;
 	display: block;
 	width: 220px;
+	padding: 10px 5px;
 	padding-left: 10px;
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 18px;
@@ -1314,9 +1317,20 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 	letter-spacing: 2px;
 	color: rgb(0, 0, 0);
-	background-image: linear-gradient(to top, #ffffff, #ffffff 35%, #f0c52e 35%, #f0c52e 70%, #ffffff 70%, #ffffff);
+	/*background-image: linear-gradient(to top, #ffffff, #ffffff 35%, #f0c52e 35%, #f0c52e 70%, #ffffff 70%, #ffffff);*/
 	border: none;
 	cursor: pointer;
+}
+
+.btn::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 8px;
+	top: 17px;
+	left: 0;
+	background-color: #f0c52e;
 }
 
 .btn-slide {
@@ -1325,13 +1339,11 @@ input[type="radio"].visually-hidden {
   letter-spacing: 3.5px;
 }
 
-.btn:hover,
-.services-switch:hover {
-  min-height: 20px;
-  padding: 10px 0;
-  background-image: linear-gradient(to top, #f0c52e, #f0c52e);
+.btn:hover::after,
+.services-switch:hover::after {
+  top: 0;
+  height: 100%;
 }
-
 .btn:active {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -1361,21 +1373,12 @@ input[type="radio"].visually-hidden {
 	border-color: #000000;
 }
 
-.catalog-page .btn-to-basket {
-	background-image: none;
-	background-image: linear-gradient(to top, transparent, transparent 35%, #f0c52e 35%, #f0c52e 70%, transparent 70%, transparent);
-}
-
-.catalog-page .btn-to-basket:hover {
-	padding: 30px 0;
-}
-
 .btn-form {
+	z-index: 1;
 	width: 200px;
   margin-top: 9px;
   letter-spacing: 3.6px;
-	background-image: none;
-	background-image: linear-gradient(to top, #efefef, #efefef 35%, #f0c52e 35%, #f0c52e 70%, #efefef 70%, #efefef);
+  background: none;
 }
 
 .catalog {
@@ -1509,25 +1512,15 @@ input[type="radio"].visually-hidden {
 }
 
 .services-switch {
-  display: block;
+	z-index: 1;
   width: 160px;
   margin: 21px 0;
   padding-left: 7px;
-  font-family: "gilroy", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 23px;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-align: center;
-  color: rgb(0, 0, 0);
-  background-image: linear-gradient(to top, transparent, transparent 35%, #f0c52e 35%, #f0c52e 70%, transparent 70%, transparent);
-  border: none;
-  cursor: pointer;
   letter-spacing: 4px;
 }
 
-.services-switch:hover {
-  background-image: linear-gradient(to top, #f0c52e, #f0c52e);
+.services-switch:active {
+	color: #000000;
 }
 
 .services-slider-switches::after {
@@ -1604,6 +1597,12 @@ input[type="radio"].visually-hidden {
   color: #f7e184;
   background-image: none;
 	background-color: #000000;
+}
+
+#services-1:checked ~ .services-slider-switches .services-switch:nth-child(1)::after,
+#services-2:checked ~ .services-slider-switches .services-switch:nth-child(2)::after,
+#services-3:checked ~ .services-slider-switches .services-switch:nth-child(3)::after {
+	display: none;
 }
 
 .services-slide:first-child::after {
