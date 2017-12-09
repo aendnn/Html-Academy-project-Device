@@ -1409,8 +1409,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item:nth-of-type(4) img {
-	margin-top: 7px;
-  margin-left: 10px;
+	margin-top: 6px;
+  margin-left: 9px;
 }
 
 .catalog-item:nth-of-type(5) img {
@@ -1423,12 +1423,9 @@ input[type="radio"].visually-hidden {
   margin-top: 10px;
 }
 
-.picture-item img {
-	margin-left: 5px;
-}
-
 .item-bottom img {
   align-self: flex-end;
+  margin-left: 3px;
 }
 
 .picture-item:hover {
@@ -1497,7 +1494,6 @@ input[type="radio"].visually-hidden {
 	z-index: 1;
   width: 160px;
   margin-bottom: 23px;
-  padding-left: 15px;
   letter-spacing: 4px;
 }
 
@@ -1557,7 +1553,7 @@ input[type="radio"].visually-hidden {
 #services-1:checked ~ .services-slider-switches .services-switch:nth-child(1) {
 	width: 278px;
   padding: 8px 0px;
-  padding-left: 21px;
+  padding-left: 17px;
   text-align: left;
   color: #f7e184;
   background-image: none;
@@ -2060,13 +2056,13 @@ input[type="radio"].visually-hidden {
 	width: 960px;
 	margin-left: -480px;
 	margin-top: -260px;
-	padding: 94px 100px;
+	padding: 76px 100px;
 	box-shadow: 0 20px 40px rgba(4, 6, 6, 0.75);
 }
 
 .modal-close {
 	position: absolute;
-	top: 19px;
+	top: 20px;
   right: 21px;
 	width: 55px;
 	height: 55px;
@@ -2119,13 +2115,14 @@ input[type="radio"].visually-hidden {
 .feedback-item {
   display: flex;
   flex-direction: column;
-	margin: 0;
-	margin-bottom: 37px;
+  margin: 0;
+  margin-bottom: 37px;
+  margin-top: 18px;
 }
 
 .feedback-item:last-of-type {
 	margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 39px;
 }
 
 .modal-feedback label {
@@ -2151,7 +2148,7 @@ input[type="radio"].visually-hidden {
 
 .modal-feedback textarea {
 	width: 760px;
-	min-height: 155px;
+	min-height: 157px;
 }
 
 .modal-feedback input[type="text"] {
