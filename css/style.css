@@ -9,36 +9,36 @@ html {
 }
 
 @font-face {
-    font-family: "gilroy";
-    src: url("../fonts/gilroylight.woff2") format("woff2"),
-     		 url("../fonts/gilroylight.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
+  font-family: "gilroy";
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+     	 url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "gilroy";
-    src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
-    		 url("../fonts/gilroyextrabold.woff") format("woff");
-    font-weight: 900;
-    font-style: normal;
+  font-family: "gilroy";
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    	 url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "open_sans";
-    src: url("../fonts/opensans.woff2") format("woff2"),
-    		 url("../fonts/opensans.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "open_sans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+    		url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 
 }
 
 @font-face {
-    font-family: "open_sans";
-    src: url("../fonts/opensanslight.woff2") format("woff2"),
-    		 url("../fonts/opensanslight.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
+  font-family: "open_sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+    		url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 
 }
 
@@ -78,7 +78,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-	width: 1160px;
+	width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -182,6 +182,7 @@ input[type="radio"].visually-hidden {
 }
 
 .input-search {
+  height: 25px;
 	background-color: transparent;
 	border: none;
 }
@@ -582,7 +583,7 @@ input[type="radio"].visually-hidden {
 .form-filter {
 	width: 270px;
   margin-left: 40px;
-  padding-top: 69px;
+  padding-top: 71px;
 	background-color: #efefef;
 }
 
@@ -908,7 +909,7 @@ input[type="radio"].visually-hidden {
 .products-list li {
   position: relative;
   display: block;
-  flex-basis: 360px;
+  width: 360px;
   flex-grow: 1;
   margin-right: 40px;
   margin-bottom: 50px;
@@ -951,17 +952,21 @@ input[type="radio"].visually-hidden {
 }
 
 .item-price {
-  text-align: right;
 	flex-basis: 80px;
   margin-left: auto;
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 20px;
+  text-align: right;
 	font-weight: 300;
 	color: #464646;
 }
 
-.products-list li::after {
+.new-item {
+  position: relative;
+}
+
+.new-item::after {
   content: "New";
   position: absolute;
   top: 29px;
@@ -979,8 +984,8 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-.products-list li:not(:last-of-type)::after {
-  opacity: 0;
+.product-item {
+  width: 360px;
 }
 
 .item-hover {
@@ -1029,6 +1034,10 @@ input[type="radio"].visually-hidden {
 	background-color: #ebebeb;
 }
 
+.pagination-list li:first-child {
+  margin-right: auto;
+}
+
 .pagination-list li:nth-child(2) {
 	margin-left: 10px;
 }
@@ -1036,10 +1045,6 @@ input[type="radio"].visually-hidden {
 .pagination-list li:nth-child(3) {
 	margin: 0 30px;
 
-}
-
-.pagination-list li:first-child {
-  margin-right: auto;
 }
 
 .pagination-list li:last-child {
@@ -1123,8 +1128,8 @@ input[type="radio"].visually-hidden {
 
 .product-slide::after {
 	position: absolute;
-	top: 13px;
-  right: 25px;
+	top: 11px;
+  right: 67px;
 	counter-increment: slider-counter;
 	content: "0" counter(slider-counter);
   font-family: "gilroy", "Arial", sans-serif;
@@ -1171,7 +1176,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-.slide-quadcopter .product-slide-picture {
+.slide-quadcopter .product-slide-picture img{
 	top: 91px;
   left: 11px;
 }
@@ -1182,15 +1187,15 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   width: 500px;
  	margin-top: 104px;
-  margin-left: auto;
+  margin-left: 125px;
   margin-right: 40px;
 }
 
 .product-slide-description::after {
   content: "";
   position: absolute;
-  top: -40px;
-  left: 2px;
+  top: -43px;
+  left: 1px;
   width: 100px;
   height: 7px;
   background-color: #ffffff;
@@ -1207,7 +1212,7 @@ input[type="radio"].visually-hidden {
 .slider-switches {
   position: absolute;
   bottom: 235px;
-  right: 61px;
+  right: 103px;
   z-index: 2;
   text-align: center;
   font-size: 0;
@@ -1276,6 +1281,11 @@ input[type="radio"].visually-hidden {
   width: 320px;
 }
 
+.slide-fitness-bracelet .product-characteristics {
+  width: 160px;
+}
+
+
 .slide-selfie-stick td:nth-child(2) {
   width: 140px;
 }
@@ -1305,10 +1315,6 @@ input[type="radio"].visually-hidden {
 	width: 600px;
 }
 
-.slide-fitness-bracelet .product-characteristics {
-  width: 160px;
-}
-
 .btn {
 	position: relative;
 	display: block;
@@ -1323,7 +1329,6 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 	letter-spacing: 2px;
 	color: rgb(0, 0, 0);
-	/*background-image: linear-gradient(to top, #ffffff, #ffffff 35%, #f0c52e 35%, #f0c52e 70%, #ffffff 70%, #ffffff);*/
 	border: none;
 	cursor: pointer;
 }
@@ -1350,10 +1355,10 @@ input[type="radio"].visually-hidden {
   top: 0;
   height: 100%;
 }
+
 .btn:active {
   color: rgba(0, 0, 0, 0.3);
 }
-
 
 #product-1:checked ~ .products-slides-list #slide-1 {
 	opacity: 1;
@@ -1389,10 +1394,6 @@ input[type="radio"].visually-hidden {
 .catalog {
   margin-bottom: 20px;
   padding-bottom: 165px;
-}
-
-.catalog .container {
-  padding: 0;
 }
 
 .catalog-list {
@@ -1654,7 +1655,6 @@ input[type="radio"].visually-hidden {
   letter-spacing: 1px;
 }
 
-
 .slide-credit .services-slide-title {
 	top: -33px;
 }
@@ -1832,7 +1832,6 @@ input[type="radio"].visually-hidden {
 	color: #ffffff;
 	background-color: #464646;
 }
-
 
 .main-footer .container {
 	display: flex;
