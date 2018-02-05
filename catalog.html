@@ -5,7 +5,7 @@
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Девайс Каталог</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/minify.css">
+  <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="catalog-page">
     <div class="container catalog-header-container">
@@ -122,61 +122,61 @@
     <div class="catalog-columns">
       <div class="container">
     		<section class="filter-products">
-    			<header class="section-title filter-products-title">
-            <h2>Фильтр:</h2>
-      		</header>
-      	  <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="filter-price">
-              <legend class="filter-title">Стоимость</legend>
-              <div class="filter-range">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
+    		  <header class="section-title filter-products-title">
+                <h2>Фильтр:</h2>
+      		  </header>
+      	     <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
+              <fieldset class="filter-price">
+                <legend class="filter-title">Стоимость</legend>
+                <div class="filter-range">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0"></div>
-                  <div class="toggle toggle-max" tabindex="0"></div>
+                  <div class="price-controls">
+                    <span class="range-price min-price">от 0</span>
+                    <span class="range-price max-price">до 5000</span>
+                  </div>
                 </div>
-                <div class="price-controls">
-                  <span class="range-price min-price">от 0</span>
-                  <span class="range-price max-price">до 5000</span>
-                </div>
-              </div>
+              </fieldset>
+              <fieldset class="filter-color">
+                <legend class="filter-title">Цвет</legend>
+                <p class="filter-item">
+                  <input class="visually-hidden filter-input input-checkbox" type="checkbox" id="black-color" name="black-color" checked>
+                  <label for="black-color">Черный</label>
+                </p>
+                <p class="filter-item">
+                  <input class="visually-hidden filter-input input-checkbox" type="checkbox" id="white-color" name="white-color" disabled>
+                  <label for="white-color">Белый</label>
+                </p>
+                <p class="filter-item">
+                  <input class="input-checkbox visually-hidden filter-input" type="checkbox" id="blue-color" name="blue-color" checked>
+                  <label for="blue-color">Синий</label>
+                </p>
+                <p class="filter-item">
+                  <input class="visually-hidden filter-input input-checkbox" type="checkbox" id="red-color" name="red-color" checked>
+                  <label for="red-color">Красный</label>
+                </p>
+                <p class="filter-item">
+                  <input class="visually-hidden filter-input input-checkbox" type="checkbox" id="pink-color" name="pink-color">
+                  <label for="pink-color">Розовый</label>
+                </p>
             </fieldset>
-            <fieldset class="filter-color">
-              <legend class="filter-title">Цвет</legend>
+            <fieldset class="filter-bluetooth">
+              <legend class="filter-title">Bluetooth</legend>
               <p class="filter-item">
-                <input class="visually-hidden filter-input input-checkbox" type="checkbox" id="black-color" name="black-color" checked>
-                <label for="black-color" tabindex="0">Черный</label>
+                <input class="visually-hidden filter-input input-radio" type="radio" id="yes" name="bluetooth" value="bluetooth-on" checked>
+                <label for="yes">Есть</label>
               </p>
               <p class="filter-item">
-                <input class="visually-hidden filter-input input-checkbox" type="checkbox" id="white-color" name="white-color">
-                <label for="white-color" tabindex="0">Белый</label>
+                <input class="visually-hidden filter-input input-radio" type="radio" id="no" name="bluetooth" value="bluetooth-off">
+                <label for="no">Нет</label>
               </p>
-              <p class="filter-item">
-                <input class="visually-hidden filter-input input-checkbox" type="checkbox" id="blue-color" name="blue-color" checked>
-                <label for="blue-color" tabindex="0">Синий</label>
-              </p>
-              <p class="filter-item">
-                <input class="visually-hidden filter-input input-checkbox" type="checkbox" id="red-color" name="red-color" checked>
-                <label for="red-color" tabindex="0">Красный</label>
-              </p>
-              <p class="filter-item">
-                <input class="visually-hidden filter-input input-checkbox" type="checkbox" id="pink-color" name="pink-color">
-                <label for="pink-color" tabindex="0">Розовый</label>
-              </p>
-          </fieldset>
-          <fieldset class="filter-bluetooth">
-            <legend class="filter-title">Bluetooth</legend>
-            <p class="filter-item">
-              <input class="visually-hidden filter-input input-radio" type="radio" id="yes" name="bluetooth" value="bluetooth-on" checked>
-              <label for="yes" tabindex="0">Есть</label>
-            </p>
-            <p class="filter-item">
-              <input class="visually-hidden filter-input input-radio" type="radio" id="no" name="bluetooth" value="bluetooth-off">
-              <label for="no" tabindex="0">Нет</label>
-            </p>
-          </fieldset>
-          <button class="btn btn-form">Показать</button>
+            </fieldset>
+            <button class="btn btn-form">Показать</button>
         </form>
       </section>
       <section class="catalog-products">
