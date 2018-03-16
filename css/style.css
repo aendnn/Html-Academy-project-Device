@@ -1143,8 +1143,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   top: 0;
   left: 0;
-  /*display: none;*/
-  opacity: 0;
+  display: none;
   width: 100%;
   min-height: 500px;
 }
@@ -1371,6 +1370,7 @@ input[type="radio"].visually-hidden {
 .slide-quadcopter .product-slide-title {
   width: 600px;
 }
+
 .btn {
   position: relative;
   display: block;
@@ -1430,10 +1430,9 @@ input[type="radio"].visually-hidden {
 #product-1:checked ~ .products-slides-list #slide-1,
 #product-2:checked ~ .products-slides-list #slide-2,
 #product-3:checked ~ .products-slides-list #slide-3 {
-  /*display: -webkit-box;
+  display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;*/
-  opacity: 1;
+  display: flex;
 }
 
 
