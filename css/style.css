@@ -714,7 +714,7 @@ input[type="radio"].visually-hidden {
   left: 0;
   width: 23px;
   height: 23px;
-  background-image: url("../img./checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   opacity: 1;
 }
@@ -751,10 +751,6 @@ input[type="radio"].visually-hidden {
   height: 9px;
   background-color: #000000;
   border-radius: 50%;
-}
-
-.input-checkbox:checked ~ label::before {
-  display: none;
 }
 
 .filter-input:hover:not(:disabled) + label::before,
